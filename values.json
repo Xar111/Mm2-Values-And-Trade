@@ -1,0 +1,13 @@
+{
+  "updated": "2026-10-19T00:00:00Z",
+  "source": "Sample data. Run the updater to replace it.",
+  "sample": true,
+  "items": [
+    {"name": "Sample Godly Knife", "value": 100, "category": "Godly"},
+    {"name": "Sample Godly Gun", "value": 80, "category": "Godly"},
+    {"name": "Sample Ancient", "value": 150, "category": "Ancient"},
+    {"name": "Sample Chroma", "value": 200, "category": "Chroma"},
+    {"name": "Sample Pet", "value": 20, "category": "Pet"},
+    {"name": "Sample Legendary", "value": 5, "category": "Legendary"}
+  ]
+}
