@@ -31,12 +31,17 @@ h1{font-weight:700;font-size:clamp(2rem,8vw,3rem);margin:0;text-align:center;let
 .panel h2{font-weight:500;font-size:1rem;margin:0 0 10px;color:var(--acc)}
 input[type=search]{width:100%;padding:11px 16px;border-radius:99px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--ink);font:inherit;transition:box-shadow .2s,border-color .2s}
 input[type=search]:focus{outline:0;border-color:var(--acc);box-shadow:0 0 18px rgba(183,148,255,.35)}
-.results{max-height:190px;overflow:auto;margin:6px 0}
-.results button{display:flex;justify-content:space-between;gap:8px;width:100%;text-align:left;background:none;border:0;border-radius:10px;color:var(--ink);padding:9px 10px;font:inherit;cursor:pointer;transition:background .15s}
+.results{max-height:230px;overflow:auto;margin:6px 0}
+.results button{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:none;border:0;border-radius:10px;color:var(--ink);padding:7px 10px;font:inherit;cursor:pointer;transition:background .15s}
 .results button:hover,.results button:focus-visible{background:rgba(183,148,255,.14)}
-.row{display:flex;align-items:center;gap:8px;padding:8px 10px;margin-top:6px;background:rgba(255,255,255,.05);border-radius:12px;box-shadow:inset 3px 0 0 var(--c);animation:pop .25s ease-out}
+.results .rn{flex:1}
+.pic{width:36px;height:36px;border-radius:8px;object-fit:contain;background:rgba(255,255,255,.06);flex:none}
+.row{display:flex;align-items:center;gap:10px;padding:8px 10px;margin-top:6px;background:rgba(255,255,255,.05);border-radius:12px;box-shadow:inset 3px 0 0 var(--c);animation:pop .25s ease-out}
 @keyframes pop{from{opacity:0;transform:scale(.95)}}
-.row .n{flex:1}.row .v{color:var(--mute);font-size:.78rem}
+.row .n{flex:1;min-width:0}
+.tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:2px}
+.tag{font-size:.68rem;line-height:1.5;padding:0 8px;border-radius:99px;border:1px solid currentColor}
+.tag.ok{color:var(--ok)}.tag.bad{color:var(--bad)}.tag.mid{color:var(--mid)}.tag.dim{color:var(--mute)}
 .row input{width:52px;padding:5px;text-align:center;background:rgba(0,0,0,.4);color:var(--ink);border:1px solid var(--line);border-radius:8px;font:inherit}
 .row button{background:none;border:0;color:var(--mute);font-size:1.3rem;cursor:pointer;padding:2px 8px}
 .row button:hover{color:var(--bad)}
@@ -48,6 +53,8 @@ input[type=search]:focus{outline:0;border-color:var(--acc);box-shadow:0 0 18px r
 .win b{color:var(--ok);text-shadow:0 0 26px var(--ok)}
 .lose b{color:var(--bad);text-shadow:0 0 26px var(--bad)}
 .fair b{color:var(--mid);text-shadow:0 0 26px var(--mid)}
+#share{display:none;margin:14px auto 0;padding:9px 24px;border-radius:99px;border:1px solid var(--acc);background:rgba(183,148,255,.12);color:var(--ink);font:inherit;cursor:pointer;transition:box-shadow .2s}
+#share:hover{box-shadow:0 0 20px rgba(183,148,255,.45)}
 .sub{color:var(--mute);font-size:.78rem;text-align:center;margin:18px 0 0}
 button:focus-visible,input:focus-visible{outline:2px solid var(--acc)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -64,6 +71,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--acc)}
     <section class="panel" id="get"><h2>you get</h2></section>
   </div>
   <div id="verdict">add items to both sides</div>
+  <div style="text-align:center"><button id="share">share trade</button></div>
   <p class="sub" id="credit"></p>
 </div></main>
 <script>
@@ -109,6 +117,13 @@ function count(el,to){
   (function step(t){const k=Math.min(1,(t-t0)/450),e=1-Math.pow(1-k,3);el.textContent=fmt(from+(to-from)*e);if(k<1)requestAnimationFrame(step)})(t0);
 }
 function ago(iso){const h=(Date.now()-new Date(iso))/36e5;return h<1?'updated just now':h<24?'updated '+Math.round(h)+'h ago':'updated '+Math.round(h/24)+'d ago'}
+function pic(url){
+  const im=document.createElement('img');im.className='pic';im.alt='';im.loading='lazy';
+  if(typeof url==='string'&&url.startsWith('https://'))im.src=url;else im.style.visibility='hidden';
+  im.onerror=()=>{im.style.visibility='hidden'};return im;
+}
+function tag(text,cls){const s=document.createElement('span');s.className='tag '+cls;s.textContent=text;return s}
+function stabClass(s){s=s.toLowerCase();return s.includes('unstable')||s.includes('fall')||s.includes('drop')?'bad':s.startsWith('stable')?'ok':'mid'}
 async function load(){
   try{
     const d=await (await fetch('values.json?'+Date.now())).json();
@@ -118,7 +133,7 @@ async function load(){
     document.getElementById('c2').textContent=ago(d.updated);
     if(d.sample)document.getElementById('warn').innerHTML='<div class="warn">sample values. finish the README setup for live ones</div>';
   }catch(e){document.getElementById('c1').textContent='could not load values.json'}
-  build('give');build('get');
+  build('give');build('get');fromHash();
 }
 function build(id){
   const el=document.getElementById(id);
@@ -128,8 +143,9 @@ function build(id){
     const s=q.value.trim().toLowerCase();res.innerHTML='';if(!s)return;
     ITEMS.filter(i=>i.name.toLowerCase().includes(s)).slice(0,8).forEach(i=>{
       const b=document.createElement('button');
-      b.innerHTML='<span></span><span>'+fmt(i.value)+'</span>';
-      b.firstChild.textContent=i.name+(i.category?' ('+i.category+')':'');
+      const nm=document.createElement('span');nm.className='rn';nm.textContent=i.name+(i.category?' ('+i.category+')':'');
+      const v=document.createElement('span');v.textContent=fmt(i.value);
+      b.append(pic(i.image),nm,v);
       b.onclick=()=>{const f=side[id].find(x=>x.name===i.name);f?f.qty++:side[id].push({name:i.name,value:i.value,cat:i.category,qty:1});q.value='';res.innerHTML='';render()};
       res.appendChild(b);
     });
@@ -140,24 +156,56 @@ function render(){
   for(const id of['give','get']){
     const el=document.getElementById(id),list=el.querySelector('.list');list.innerHTML='';
     side[id].forEach((it,idx)=>{
-      const live=ITEMS.find(i=>i.name===it.name);if(live)it.value=live.value;
+      const live=ITEMS.find(i=>i.name===it.name)||{};
+      if(live.value!=null)it.value=live.value;
       const r=document.createElement('div');r.className='row';r.style.setProperty('--c',col(it.cat));
-      r.innerHTML='<span class="n"></span><span class="v">'+fmt(it.value)+' ea</span><input type="number" min="1" value="'+it.qty+'" aria-label="Quantity"><button aria-label="Remove">×</button>';
-      r.querySelector('.n').textContent=it.name;
-      r.querySelector('input').onchange=e=>{it.qty=Math.max(1,parseInt(e.target.value)||1);render()};
-      r.querySelector('button').onclick=()=>{side[id].splice(idx,1);render()};
+      const n=document.createElement('div');n.className='n';
+      const nm=document.createElement('div');nm.textContent=it.name;
+      const tg=document.createElement('div');tg.className='tags';
+      tg.append(tag(fmt(it.value)+' ea','dim'));
+      if(live.stability)tg.append(tag(live.stability,stabClass(live.stability)));
+      if(live.demand!=null)tg.append(tag('demand '+live.demand+'/10','dim'));
+      n.append(nm,tg);
+      const q=document.createElement('input');q.type='number';q.min=1;q.value=it.qty;q.setAttribute('aria-label','Quantity');
+      q.onchange=e=>{it.qty=Math.max(1,parseInt(e.target.value)||1);render()};
+      const x=document.createElement('button');x.textContent='×';x.setAttribute('aria-label','Remove');
+      x.onclick=()=>{side[id].splice(idx,1);render()};
+      r.append(pic(live.image),n,q,x);
       list.appendChild(r);
     });
     tot[id]=side[id].reduce((s,i)=>s+i.value*i.qty,0);
     count(el.querySelector('.t'),tot[id]);
   }
-  const v=document.getElementById('verdict');
-  if(!side.give.length||!side.get.length){v.className='';v.textContent='add items to both sides';return}
+  const v=document.getElementById('verdict'),sh=document.getElementById('share');
+  if(!side.give.length||!side.get.length){v.className='';v.textContent='add items to both sides';sh.style.display='none';return}
+  sh.style.display='inline-block';
   const d=tot.get-tot.give,big=Math.max(tot.get,tot.give),pct=big?Math.abs(d)/big*100:0;
   let cls,t;
   if(pct<=5){cls='fair';t='fair trade'}else if(d>0){cls='win';t='you win'}else{cls='lose';t='you lose'}
   v.className=cls;
   v.innerHTML='<b>'+t+'</b><p>'+(cls==='fair'?'within 5% of even':(d>0?'+':'−')+fmt(Math.abs(d))+' value ('+fmt(pct)+'%)')+'</p>';
+}
+/* share link: the whole trade lives in the URL after the # */
+function shareLink(){
+  const p=k=>side[k].map(i=>[i.name,i.qty]);
+  return location.origin+location.pathname+'#t='+encodeURIComponent(JSON.stringify({g:p('give'),r:p('get')}));
+}
+document.getElementById('share').onclick=async function(){
+  const url=shareLink(),btn=this;
+  try{
+    if(navigator.share){await navigator.share({title:'MM2 trade',url});return}
+    await navigator.clipboard.writeText(url);
+    btn.textContent='link copied';setTimeout(()=>btn.textContent='share trade',1800);
+  }catch(e){if(e.name!=='AbortError')prompt('Copy this link',url)}
+};
+function fromHash(){
+  const m=location.hash.match(/^#t=(.+)$/);if(!m)return;
+  try{
+    const d=JSON.parse(decodeURIComponent(m[1]));
+    for(const [k,id] of [['g','give'],['r','get']])
+      (d[k]||[]).forEach(([n,q])=>{const it=ITEMS.find(i=>i.name===n);if(it)side[id].push({name:n,value:it.value,cat:it.category,qty:Math.max(1,parseInt(q)||1)})});
+    render();
+  }catch(e){}
 }
 load();
 </script></body></html>
