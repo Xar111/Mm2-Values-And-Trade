@@ -20,7 +20,11 @@ const items = []; let credit = null, total = Infinity;
 for (let offset = 0; offset < total; offset += 100) {
   const d = await page(offset);
   total = d.total; credit = credit ?? d.credit;
-  for (const i of d.items) items.push({ name: i.name, value: i.value, category: i.category, mm2values: i.value_source_a, supreme: i.value_source_b });
+  for (const i of d.items) items.push({
+    name: i.name, value: i.value, category: i.category,
+    mm2values: i.value_source_a, supreme: i.value_source_b,
+    stability: i.stability ?? null, demand: i.demand ?? null, image: i.image_url ?? null
+  });
 }
 
 const clean = items.filter(i => i.name && Number.isFinite(i.value));
