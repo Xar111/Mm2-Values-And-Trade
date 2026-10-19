@@ -1,13 +1,5216 @@
 {
-  "updated": "2026-10-19T00:00:00Z",
-  "source": "Sample data. Run the updater to replace it.",
-  "sample": true,
+  "updated": "2026-10-19T22:23:55.372Z",
+  "source": "RBLXValue (blend of MM2Values and Supreme Values)",
+  "credit": "Data from rblxvalue.com",
+  "sample": false,
   "items": [
-    {"name": "Sample Godly Knife", "value": 100, "category": "Godly"},
-    {"name": "Sample Godly Gun", "value": 80, "category": "Godly"},
-    {"name": "Sample Ancient", "value": 150, "category": "Ancient"},
-    {"name": "Sample Chroma", "value": 200, "category": "Chroma"},
-    {"name": "Sample Pet", "value": 20, "category": "Pet"},
-    {"name": "Sample Legendary", "value": 5, "category": "Legendary"}
+    {
+      "name": "Gold Gingerscythe",
+      "value": 500000000,
+      "category": "unique",
+      "mm2values": 500000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold LogChopper",
+      "value": 500000000,
+      "category": "unique",
+      "mm2values": 500000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Minty",
+      "value": 500000000,
+      "category": "unique",
+      "mm2values": 500000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Vampires Edge",
+      "value": 500000000,
+      "category": "unique",
+      "mm2values": 500000000,
+      "supreme": 0
+    },
+    {
+      "name": "Nik's Scythe",
+      "value": 250000000,
+      "category": "ancient",
+      "mm2values": 250000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Candy",
+      "value": 150000000,
+      "category": "unique",
+      "mm2values": 150000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Hallows",
+      "value": 150000000,
+      "category": "unique",
+      "mm2values": 150000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Sugar",
+      "value": 150000000,
+      "category": "unique",
+      "mm2values": 150000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Raygun",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Snow Dagger",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Snowcannon",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Icepiercer\r\n",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Icebreaker",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Iceblaster",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Gingerscope",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Harvester",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Swirly Axe",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Swirly Gun",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Travelers Axe",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Vampires Axe",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Elderwood Blade",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Icecrusher",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold EW Revolver",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Synthwave",
+      "value": 100000000,
+      "category": "unique",
+      "mm2values": 100000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Snowcannon",
+      "value": 50000000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Snow Dagger",
+      "value": 50000000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Raygun",
+      "value": 50000000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Candy",
+      "value": 50000000,
+      "category": "unique",
+      "mm2values": 50000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Hallows",
+      "value": 50000000,
+      "category": "unique",
+      "mm2values": 50000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Sugar",
+      "value": 45000000,
+      "category": "unique",
+      "mm2values": 45000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver EW Revolver",
+      "value": 40000000,
+      "category": "unique",
+      "mm2values": 40000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Icebreaker",
+      "value": 35000000,
+      "category": "unique",
+      "mm2values": 35000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Iceblaster",
+      "value": 35000000,
+      "category": "unique",
+      "mm2values": 35000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver LogChopper",
+      "value": 35000000,
+      "category": "unique",
+      "mm2values": 35000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Minty",
+      "value": 35000000,
+      "category": "unique",
+      "mm2values": 35000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Swirly Axe",
+      "value": 25000000,
+      "category": "unique",
+      "mm2values": 25000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Swirly Gun",
+      "value": 20000000,
+      "category": "unique",
+      "mm2values": 20000000,
+      "supreme": 0
+    },
+    {
+      "name": "Slouse's Clown (Gun)",
+      "value": 10000000,
+      "category": "unique",
+      "mm2values": 10000000,
+      "supreme": 0
+    },
+    {
+      "name": "Slouse's Clown (Knife)",
+      "value": 10000000,
+      "category": "unique",
+      "mm2values": 10000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Harvester",
+      "value": 2500000,
+      "category": "unique",
+      "mm2values": 2500000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Edlerwood Blade",
+      "value": 2500000,
+      "category": "unique",
+      "mm2values": 2500000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Icepiercer",
+      "value": 2000000,
+      "category": "unique",
+      "mm2values": 2000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Gingerscope",
+      "value": 2000000,
+      "category": "unique",
+      "mm2values": 2000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Gingerscythe",
+      "value": 2000000,
+      "category": "unique",
+      "mm2values": 2000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Vampires Edge",
+      "value": 2000000,
+      "category": "unique",
+      "mm2values": 2000000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Constellation",
+      "value": 1500000,
+      "category": "unique",
+      "mm2values": 1500000,
+      "supreme": 0
+    },
+    {
+      "name": "Gold Celestial",
+      "value": 1500000,
+      "category": "unique",
+      "mm2values": 1500000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Constellation",
+      "value": 1000000,
+      "category": "unique",
+      "mm2values": 1000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Travelers Axe",
+      "value": 1000000,
+      "category": "unique",
+      "mm2values": 1000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Icecrusher",
+      "value": 1000000,
+      "category": "unique",
+      "mm2values": 1000000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Celestial",
+      "value": 1000000,
+      "category": "unique",
+      "mm2values": 1000000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Snowcannon",
+      "value": 750000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Snow Dagger",
+      "value": 750000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Raygun",
+      "value": 750000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Celestial",
+      "value": 750000,
+      "category": "unique",
+      "mm2values": 750000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Constellation",
+      "value": 750000,
+      "category": "unique",
+      "mm2values": 750000,
+      "supreme": 0
+    },
+    {
+      "name": "Red Raygun",
+      "value": 500000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Elderwood",
+      "value": 500000,
+      "category": "unique",
+      "mm2values": 500000,
+      "supreme": 0
+    },
+    {
+      "name": "Red Constellation",
+      "value": 500000,
+      "category": "unique",
+      "mm2values": 500000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Vampires Axe",
+      "value": 500000,
+      "category": "unique",
+      "mm2values": 500000,
+      "supreme": 0
+    },
+    {
+      "name": "Silver Synthwave",
+      "value": 500000,
+      "category": "unique",
+      "mm2values": 500000,
+      "supreme": 0
+    },
+    {
+      "name": "Red Snow Dagger",
+      "value": 500000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Red Snowcannon",
+      "value": 500000,
+      "category": "unique",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Red Celestial",
+      "value": 500000,
+      "category": "unique",
+      "mm2values": 500000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Icebreaker",
+      "value": 200000,
+      "category": "unique",
+      "mm2values": 200000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Iceblaster",
+      "value": 200000,
+      "category": "unique",
+      "mm2values": 200000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Vampires Edge",
+      "value": 200000,
+      "category": "unique",
+      "mm2values": 200000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Candy",
+      "value": 200000,
+      "category": "unique",
+      "mm2values": 200000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Hallows",
+      "value": 200000,
+      "category": "unique",
+      "mm2values": 200000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Sugar",
+      "value": 200000,
+      "category": "unique",
+      "mm2values": 200000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze EW Revolver",
+      "value": 200000,
+      "category": "unique",
+      "mm2values": 200000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze LogChopper",
+      "value": 200000,
+      "category": "unique",
+      "mm2values": 200000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Minty",
+      "value": 200000,
+      "category": "unique",
+      "mm2values": 200000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Gingerscope",
+      "value": 150000,
+      "category": "unique",
+      "mm2values": 150000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Edlerwood Blade",
+      "value": 150000,
+      "category": "unique",
+      "mm2values": 150000,
+      "supreme": 0
+    },
+    {
+      "name": "Bornze Icepiercer",
+      "value": 150000,
+      "category": "unique",
+      "mm2values": 150000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Icecrusher",
+      "value": 150000,
+      "category": "unique",
+      "mm2values": 150000,
+      "supreme": 0
+    },
+    {
+      "name": "Chroma Travelers Gun",
+      "value": 140000,
+      "category": "chroma",
+      "mm2values": 140000,
+      "supreme": 140000
+    },
+    {
+      "name": "Bronze Synthwave",
+      "value": 100000,
+      "category": "unique",
+      "mm2values": 100000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Vampires Axe",
+      "value": 100000,
+      "category": "unique",
+      "mm2values": 100000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Travelers Axe",
+      "value": 100000,
+      "category": "unique",
+      "mm2values": 100000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Swirly Gun",
+      "value": 100000,
+      "category": "unique",
+      "mm2values": 100000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Swirly Axe",
+      "value": 100000,
+      "category": "unique",
+      "mm2values": 100000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Harvester",
+      "value": 100000,
+      "category": "unique",
+      "mm2values": 100000,
+      "supreme": 0
+    },
+    {
+      "name": "Bronze Gingerscythe",
+      "value": 100000,
+      "category": "unique",
+      "mm2values": 100000,
+      "supreme": 0
+    },
+    {
+      "name": "Chroma Evergun",
+      "value": 50500,
+      "category": "chroma",
+      "mm2values": 51000,
+      "supreme": 50000
+    },
+    {
+      "name": "Blue Candy",
+      "value": 50000,
+      "category": "unique",
+      "mm2values": 50000,
+      "supreme": 0
+    },
+    {
+      "name": "Red Hallow",
+      "value": 50000,
+      "category": "unique",
+      "mm2values": 50000,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Sugar",
+      "value": 50000,
+      "category": "unique",
+      "mm2values": 50000,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Logchopper",
+      "value": 50000,
+      "category": "unique",
+      "mm2values": 50000,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Minty",
+      "value": 50000,
+      "category": "unique",
+      "mm2values": 50000,
+      "supreme": 0
+    },
+    {
+      "name": "Red Icecrusher",
+      "value": 45000,
+      "category": "unique",
+      "mm2values": 45000,
+      "supreme": 0
+    },
+    {
+      "name": "Red Icebreaker",
+      "value": 45000,
+      "category": "unique",
+      "mm2values": 45000,
+      "supreme": 0
+    },
+    {
+      "name": "Red Iceblaster",
+      "value": 45000,
+      "category": "unique",
+      "mm2values": 45000,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Harvester",
+      "value": 45000,
+      "category": "unique",
+      "mm2values": 45000,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Elderwood Blade",
+      "value": 45000,
+      "category": "unique",
+      "mm2values": 45000,
+      "supreme": 0
+    },
+    {
+      "name": "Red Icepiercer",
+      "value": 45000,
+      "category": "unique",
+      "mm2values": 45000,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Gingerscope",
+      "value": 45000,
+      "category": "unique",
+      "mm2values": 45000,
+      "supreme": 0
+    },
+    {
+      "name": "Red Traveler's Axe",
+      "value": 40000,
+      "category": "unique",
+      "mm2values": 40000,
+      "supreme": 0
+    },
+    {
+      "name": "Purple Vampire's Axe",
+      "value": 40000,
+      "category": "unique",
+      "mm2values": 40000,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Gingerscythe",
+      "value": 40000,
+      "category": "unique",
+      "mm2values": 40000,
+      "supreme": 0
+    },
+    {
+      "name": "Red Traveler's Axe",
+      "value": 40000,
+      "category": "unique",
+      "mm2values": 40000,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Swirly Gun",
+      "value": 40000,
+      "category": "unique",
+      "mm2values": 40000,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Swirly Axe",
+      "value": 40000,
+      "category": "unique",
+      "mm2values": 40000,
+      "supreme": 0
+    },
+    {
+      "name": "Blue Vampire's Edge",
+      "value": 40000,
+      "category": "unique",
+      "mm2values": 40000,
+      "supreme": 0
+    },
+    {
+      "name": "Chroma Evergreen",
+      "value": 36750,
+      "category": "chroma",
+      "mm2values": 37500,
+      "supreme": 36000
+    },
+    {
+      "name": "Chroma Bauble",
+      "value": 29000,
+      "category": "chroma",
+      "mm2values": 29000,
+      "supreme": 29000
+    },
+    {
+      "name": "Chroma Constellation\r\n",
+      "value": 26500,
+      "category": "chroma",
+      "mm2values": 26000,
+      "supreme": 27000
+    },
+    {
+      "name": "Chroma Vampires Gun",
+      "value": 24750,
+      "category": "chroma",
+      "mm2values": 25000,
+      "supreme": 24500
+    },
+    {
+      "name": "Chroma Alienbeam",
+      "value": 23500,
+      "category": "chroma",
+      "mm2values": 23000,
+      "supreme": 24000
+    },
+    {
+      "name": "Gingerscope",
+      "value": 14500,
+      "category": "ancient",
+      "mm2values": 14500,
+      "supreme": 14500
+    },
+    {
+      "name": "Chroma Raygun",
+      "value": 13875,
+      "category": "chroma",
+      "mm2values": 14000,
+      "supreme": 13750
+    },
+    {
+      "name": "Chroma Sunsire",
+      "value": 9625,
+      "category": "chroma",
+      "mm2values": 9750,
+      "supreme": 9500
+    },
+    {
+      "name": "Chroma Snowcannon",
+      "value": 7700,
+      "category": "chroma",
+      "mm2values": 7650,
+      "supreme": 7750
+    },
+    {
+      "name": "Traveler's Axe",
+      "value": 7175,
+      "category": "ancient",
+      "mm2values": 7150,
+      "supreme": 7200
+    },
+    {
+      "name": "Chroma Sunset",
+      "value": 5875,
+      "category": "chroma",
+      "mm2values": 6000,
+      "supreme": 5750
+    },
+    {
+      "name": "Chroma Blizzard",
+      "value": 5500,
+      "category": "chroma",
+      "mm2values": 5500,
+      "supreme": 5500
+    },
+    {
+      "name": "Travelers Gun",
+      "value": 5175,
+      "category": "godly",
+      "mm2values": 5150,
+      "supreme": 5200
+    },
+    {
+      "name": "Chroma Snowstorm",
+      "value": 4250,
+      "category": "chroma",
+      "mm2values": 4250,
+      "supreme": 4250
+    },
+    {
+      "name": "Chroma Heart Wand",
+      "value": 3450,
+      "category": "chroma",
+      "mm2values": 3400,
+      "supreme": 3500
+    },
+    {
+      "name": "Evergun",
+      "value": 3438,
+      "category": "godly",
+      "mm2values": 3425,
+      "supreme": 3450
+    },
+    {
+      "name": "SharkSeeker",
+      "value": 3000,
+      "category": "unique",
+      "mm2values": 3000,
+      "supreme": 0
+    },
+    {
+      "name": "Dartbringer",
+      "value": 3000,
+      "category": "unique",
+      "mm2values": 3000,
+      "supreme": 0
+    },
+    {
+      "name": "Evergreen",
+      "value": 2700,
+      "category": "godly",
+      "mm2values": 2700,
+      "supreme": 2700
+    },
+    {
+      "name": "Constellation",
+      "value": 2550,
+      "category": "godly",
+      "mm2values": 2600,
+      "supreme": 2500
+    },
+    {
+      "name": "Chroma Snow Dagger",
+      "value": 2375,
+      "category": "chroma",
+      "mm2values": 2400,
+      "supreme": 2350
+    },
+    {
+      "name": "Chroma Watergun",
+      "value": 2325,
+      "category": "chroma",
+      "mm2values": 2350,
+      "supreme": 2300
+    },
+    {
+      "name": "Alienbeam",
+      "value": 2025,
+      "category": "godly",
+      "mm2values": 2050,
+      "supreme": 2000
+    },
+    {
+      "name": "Raygun",
+      "value": 1988,
+      "category": "godly",
+      "mm2values": 2000,
+      "supreme": 1975
+    },
+    {
+      "name": "Celestial",
+      "value": 1950,
+      "category": "ancient",
+      "mm2values": 1950,
+      "supreme": 1950
+    },
+    {
+      "name": "Vampire's Gun",
+      "value": 1888,
+      "category": "godly",
+      "mm2values": 1875,
+      "supreme": 1900
+    },
+    {
+      "name": "Chroma Icecream",
+      "value": 1863,
+      "category": "chroma",
+      "mm2values": 1875,
+      "supreme": 1850
+    },
+    {
+      "name": "Turkey",
+      "value": 1850,
+      "category": "godly",
+      "mm2values": 1850,
+      "supreme": 1850
+    },
+    {
+      "name": "Chroma Ornament",
+      "value": 1813,
+      "category": "chroma",
+      "mm2values": 1800,
+      "supreme": 1825
+    },
+    {
+      "name": "Chroma Treat",
+      "value": 1788,
+      "category": "chroma",
+      "mm2values": 1800,
+      "supreme": 1775
+    },
+    {
+      "name": "Darkshot",
+      "value": 1750,
+      "category": "godly",
+      "mm2values": 1750,
+      "supreme": 1750
+    },
+    {
+      "name": "Chroma Sweet",
+      "value": 1738,
+      "category": "chroma",
+      "mm2values": 1750,
+      "supreme": 1725
+    },
+    {
+      "name": "Darksword",
+      "value": 1725,
+      "category": "godly",
+      "mm2values": 1725,
+      "supreme": 1725
+    },
+    {
+      "name": "Vampire's Axe",
+      "value": 1388,
+      "category": "ancient",
+      "mm2values": 1400,
+      "supreme": 1375
+    },
+    {
+      "name": "Chroma Sands",
+      "value": 1250,
+      "category": "chroma",
+      "mm2values": 1250,
+      "supreme": 1250
+    },
+    {
+      "name": "Blossom",
+      "value": 1213,
+      "category": "godly",
+      "mm2values": 1215,
+      "supreme": 1210
+    },
+    {
+      "name": "Sakura",
+      "value": 1203,
+      "category": "godly",
+      "mm2values": 1205,
+      "supreme": 1200
+    },
+    {
+      "name": "Chroma Beachy",
+      "value": 1200,
+      "category": "chroma",
+      "mm2values": 1200,
+      "supreme": 1200
+    },
+    {
+      "name": "Sunrise",
+      "value": 800,
+      "category": "godly",
+      "mm2values": 800,
+      "supreme": 800
+    },
+    {
+      "name": "Zombie Dog",
+      "value": 738,
+      "category": "pets",
+      "mm2values": 725,
+      "supreme": 750
+    },
+    {
+      "name": "Embersickle",
+      "value": 725,
+      "category": "godly",
+      "mm2values": 0,
+      "supreme": 725
+    },
+    {
+      "name": "Snowcannon",
+      "value": 678,
+      "category": "godly",
+      "mm2values": 680,
+      "supreme": 675
+    },
+    {
+      "name": "Bauble",
+      "value": 675,
+      "category": "godly",
+      "mm2values": 675,
+      "supreme": 675
+    },
+    {
+      "name": "Soul",
+      "value": 653,
+      "category": "godly",
+      "mm2values": 650,
+      "supreme": 655
+    },
+    {
+      "name": "Sunset",
+      "value": 650,
+      "category": "godly",
+      "mm2values": 650,
+      "supreme": 650
+    },
+    {
+      "name": "Spirit",
+      "value": 643,
+      "category": "godly",
+      "mm2values": 640,
+      "supreme": 645
+    },
+    {
+      "name": "Elf Pet (2019)",
+      "value": 625,
+      "category": "pets",
+      "mm2values": 675,
+      "supreme": 625
+    },
+    {
+      "name": "Xenoshot",
+      "value": 428,
+      "category": "godly",
+      "mm2values": 430,
+      "supreme": 425
+    },
+    {
+      "name": "Xenoknife",
+      "value": 425,
+      "category": "godly",
+      "mm2values": 425,
+      "supreme": 425
+    },
+    {
+      "name": "Rainbow Gun",
+      "value": 408,
+      "category": "godly",
+      "mm2values": 410,
+      "supreme": 405
+    },
+    {
+      "name": "Flora",
+      "value": 403,
+      "category": "godly",
+      "mm2values": 405,
+      "supreme": 400
+    },
+    {
+      "name": "Rainbow",
+      "value": 400,
+      "category": "godly",
+      "mm2values": 400,
+      "supreme": 400
+    },
+    {
+      "name": "Bloom",
+      "value": 395,
+      "category": "godly",
+      "mm2values": 395,
+      "supreme": 395
+    },
+    {
+      "name": "Heart Wand",
+      "value": 345,
+      "category": "godly",
+      "mm2values": 350,
+      "supreme": 340
+    },
+    {
+      "name": "Corrupt",
+      "value": 308,
+      "category": "unique",
+      "mm2values": 315,
+      "supreme": 300
+    },
+    {
+      "name": "Snowstorm",
+      "value": 265,
+      "category": "godly",
+      "mm2values": 270,
+      "supreme": 260
+    },
+    {
+      "name": "Blizzard",
+      "value": 265,
+      "category": "godly",
+      "mm2values": 270,
+      "supreme": 260
+    },
+    {
+      "name": "Cane Knife 2015",
+      "value": 263,
+      "category": "rare",
+      "mm2values": 525,
+      "supreme": 1
+    },
+    {
+      "name": "Cane Knife 2018",
+      "value": 263,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 525
+    },
+    {
+      "name": "Harvester",
+      "value": 250,
+      "category": "ancient",
+      "mm2values": 250,
+      "supreme": 250
+    },
+    {
+      "name": "Bats Knife 2018",
+      "value": 245,
+      "category": "common",
+      "mm2values": 250,
+      "supreme": 240
+    },
+    {
+      "name": "Ocean",
+      "value": 243,
+      "category": "godly",
+      "mm2values": 240,
+      "supreme": 245
+    },
+    {
+      "name": "Waves",
+      "value": 238,
+      "category": "godly",
+      "mm2values": 235,
+      "supreme": 240
+    },
+    {
+      "name": "Flowerwood gun",
+      "value": 238,
+      "category": "godly",
+      "mm2values": 235,
+      "supreme": 240
+    },
+    {
+      "name": "Flowerwood",
+      "value": 233,
+      "category": "godly",
+      "mm2values": 230,
+      "supreme": 235
+    },
+    {
+      "name": "Bones Gun",
+      "value": 195,
+      "category": "uncommon",
+      "mm2values": 195,
+      "supreme": 210
+    },
+    {
+      "name": "Snow Dagger",
+      "value": 173,
+      "category": "godly",
+      "mm2values": 170,
+      "supreme": 175
+    },
+    {
+      "name": "Icepiercer",
+      "value": 163,
+      "category": "ancient",
+      "mm2values": 165,
+      "supreme": 160
+    },
+    {
+      "name": "Treat",
+      "value": 155,
+      "category": "godly",
+      "mm2values": 155,
+      "supreme": 155
+    },
+    {
+      "name": "Icecream",
+      "value": 155,
+      "category": "godly",
+      "mm2values": 155,
+      "supreme": 155
+    },
+    {
+      "name": "Watergun",
+      "value": 153,
+      "category": "godly",
+      "mm2values": 150,
+      "supreme": 155
+    },
+    {
+      "name": "Sweet",
+      "value": 150,
+      "category": "godly",
+      "mm2values": 150,
+      "supreme": 150
+    },
+    {
+      "name": "Dogey",
+      "value": 145,
+      "category": "pets",
+      "mm2values": 140,
+      "supreme": 150
+    },
+    {
+      "name": "Borealis",
+      "value": 143,
+      "category": "godly",
+      "mm2values": 140,
+      "supreme": 145
+    },
+    {
+      "name": "Latte Knife",
+      "value": 140,
+      "category": "legendary",
+      "mm2values": 140,
+      "supreme": 140
+    },
+    {
+      "name": "Latte gun",
+      "value": 140,
+      "category": "legendary",
+      "mm2values": 140,
+      "supreme": 140
+    },
+    {
+      "name": "Australis",
+      "value": 138,
+      "category": "godly",
+      "mm2values": 135,
+      "supreme": 140
+    },
+    {
+      "name": "Brains 2019",
+      "value": 130,
+      "category": "uncommon",
+      "mm2values": 125,
+      "supreme": 135
+    },
+    {
+      "name": "Dungeon",
+      "value": 123,
+      "category": "rare",
+      "mm2values": 125,
+      "supreme": 120
+    },
+    {
+      "name": "Zombified Knife",
+      "value": 123,
+      "category": "uncommon",
+      "mm2values": 125,
+      "supreme": 120
+    },
+    {
+      "name": "Bat Knife",
+      "value": 123,
+      "category": "godly",
+      "mm2values": 120,
+      "supreme": 125
+    },
+    {
+      "name": "Blue Pumpkin (2018)",
+      "value": 111,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 220
+    },
+    {
+      "name": "Gingerbread 2019",
+      "value": 90,
+      "category": "uncommon",
+      "mm2values": 90,
+      "supreme": 1
+    },
+    {
+      "name": "Beachy",
+      "value": 88,
+      "category": "godly",
+      "mm2values": 90,
+      "supreme": 85
+    },
+    {
+      "name": "Sands",
+      "value": 88,
+      "category": "godly",
+      "mm2values": 90,
+      "supreme": 85
+    },
+    {
+      "name": "Candy",
+      "value": 85,
+      "category": "godly",
+      "mm2values": 90,
+      "supreme": 80
+    },
+    {
+      "name": "Pearlshine",
+      "value": 80,
+      "category": "godly",
+      "mm2values": 80,
+      "supreme": 80
+    },
+    {
+      "name": "Pearl",
+      "value": 75,
+      "category": "godly",
+      "mm2values": 75,
+      "supreme": 75
+    },
+    {
+      "name": "Black Cat",
+      "value": 73,
+      "category": "pets",
+      "mm2values": 70,
+      "supreme": 75
+    },
+    {
+      "name": "Darkknife",
+      "value": 68,
+      "category": "rare",
+      "mm2values": 65,
+      "supreme": 70
+    },
+    {
+      "name": "Icebreaker",
+      "value": 68,
+      "category": "ancient",
+      "mm2values": 70,
+      "supreme": 65
+    },
+    {
+      "name": "Heartblade",
+      "value": 65,
+      "category": "godly",
+      "mm2values": 65,
+      "supreme": 65
+    },
+    {
+      "name": "Chroma Darkbringer",
+      "value": 63,
+      "category": "chroma",
+      "mm2values": 60,
+      "supreme": 65
+    },
+    {
+      "name": "Ornament",
+      "value": 63,
+      "category": "godly",
+      "mm2values": 60,
+      "supreme": 65
+    },
+    {
+      "name": "Bat",
+      "value": 63,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 125
+    },
+    {
+      "name": "Red Pumpkin (2018)",
+      "value": 61,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 120
+    },
+    {
+      "name": "Piggy",
+      "value": 60,
+      "category": "pets",
+      "mm2values": 65,
+      "supreme": 55
+    },
+    {
+      "name": "Chroma Lightbringer",
+      "value": 58,
+      "category": "chroma",
+      "mm2values": 55,
+      "supreme": 60
+    },
+    {
+      "name": "Snowflake 2018",
+      "value": 55,
+      "category": "uncommon",
+      "mm2values": 55,
+      "supreme": 55
+    },
+    {
+      "name": "Branches",
+      "value": 53,
+      "category": "uncommon",
+      "mm2values": 55,
+      "supreme": 50
+    },
+    {
+      "name": "Mr. Reindeer",
+      "value": 53,
+      "category": "pets",
+      "mm2values": 55,
+      "supreme": 50
+    },
+    {
+      "name": "Spectral Knife",
+      "value": 50,
+      "category": "legendary",
+      "mm2values": 50,
+      "supreme": 50
+    },
+    {
+      "name": "Silent Night Knife",
+      "value": 50,
+      "category": "rare",
+      "mm2values": 50,
+      "supreme": 50
+    },
+    {
+      "name": "Traveler (Gun)",
+      "value": 50,
+      "category": "legendary",
+      "mm2values": 50,
+      "supreme": 50
+    },
+    {
+      "name": "Chroma Luger",
+      "value": 49,
+      "category": "chroma",
+      "mm2values": 48,
+      "supreme": 50
+    },
+    {
+      "name": "Batwing",
+      "value": 44,
+      "category": "ancient",
+      "mm2values": 45,
+      "supreme": 42
+    },
+    {
+      "name": "Aurora Gun 2021",
+      "value": 43,
+      "category": "legendary",
+      "mm2values": 40,
+      "supreme": 45
+    },
+    {
+      "name": "Vampire Gun (2022)",
+      "value": 43,
+      "category": "legendary",
+      "mm2values": 40,
+      "supreme": 45
+    },
+    {
+      "name": "Chroma Candleflame",
+      "value": 40,
+      "category": "chroma",
+      "mm2values": 40,
+      "supreme": 40
+    },
+    {
+      "name": "Chroma Laser",
+      "value": 40,
+      "category": "chroma",
+      "mm2values": 40,
+      "supreme": 40
+    },
+    {
+      "name": "Pumpkin 2020",
+      "value": 39,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 39
+    },
+    {
+      "name": "Swirly Axe",
+      "value": 39,
+      "category": "ancient",
+      "mm2values": 40,
+      "supreme": 38
+    },
+    {
+      "name": "Elderwood Scythe",
+      "value": 39,
+      "category": "ancient",
+      "mm2values": 40,
+      "supreme": 38
+    },
+    {
+      "name": "Red luger",
+      "value": 37,
+      "category": "godly",
+      "mm2values": 38,
+      "supreme": 35
+    },
+    {
+      "name": "Chroma Elderwood Blade",
+      "value": 36,
+      "category": "chroma",
+      "mm2values": 35,
+      "supreme": 37
+    },
+    {
+      "name": "Spectre",
+      "value": 36,
+      "category": "godly",
+      "mm2values": 37,
+      "supreme": 35
+    },
+    {
+      "name": "Phantom",
+      "value": 36,
+      "category": "godly",
+      "mm2values": 37,
+      "supreme": 35
+    },
+    {
+      "name": "Chroma Swirly Gun",
+      "value": 35,
+      "category": "chroma",
+      "mm2values": 35,
+      "supreme": 35
+    },
+    {
+      "name": "Chroma DeathShard",
+      "value": 35,
+      "category": "chroma",
+      "mm2values": 35,
+      "supreme": 35
+    },
+    {
+      "name": "Cotton Candy",
+      "value": 35,
+      "category": "legendary",
+      "mm2values": 35,
+      "supreme": 35
+    },
+    {
+      "name": "Beach",
+      "value": 35,
+      "category": "legendary",
+      "mm2values": 35,
+      "supreme": 35
+    },
+    {
+      "name": "Makeshift Knife",
+      "value": 35,
+      "category": "rare",
+      "mm2values": 35,
+      "supreme": 35
+    },
+    {
+      "name": "Candleflame",
+      "value": 34,
+      "category": "godly",
+      "mm2values": 35,
+      "supreme": 33
+    },
+    {
+      "name": "Iceblaster",
+      "value": 34,
+      "category": "godly",
+      "mm2values": 35,
+      "supreme": 33
+    },
+    {
+      "name": "Elderwood Revolver",
+      "value": 34,
+      "category": "godly",
+      "mm2values": 35,
+      "supreme": 33
+    },
+    {
+      "name": "Darkbringer",
+      "value": 34,
+      "category": "godly",
+      "mm2values": 35,
+      "supreme": 33
+    },
+    {
+      "name": "Chroma Slasher",
+      "value": 33,
+      "category": "chroma",
+      "mm2values": 33,
+      "supreme": 32
+    },
+    {
+      "name": "Chroma Shark",
+      "value": 33,
+      "category": "chroma",
+      "mm2values": 33,
+      "supreme": 32
+    },
+    {
+      "name": "Chroma Fang",
+      "value": 33,
+      "category": "chroma",
+      "mm2values": 33,
+      "supreme": 32
+    },
+    {
+      "name": "Chroma Gemstone",
+      "value": 33,
+      "category": "chroma",
+      "mm2values": 33,
+      "supreme": 32
+    },
+    {
+      "name": "Makeshift",
+      "value": 33,
+      "category": "godly",
+      "mm2values": 33,
+      "supreme": 33
+    },
+    {
+      "name": "Elderwood Blade",
+      "value": 33,
+      "category": "godly",
+      "mm2values": 32,
+      "supreme": 33
+    },
+    {
+      "name": "Sugar",
+      "value": 33,
+      "category": "godly",
+      "mm2values": 33,
+      "supreme": 32
+    },
+    {
+      "name": "Lightbringer",
+      "value": 33,
+      "category": "godly",
+      "mm2values": 33,
+      "supreme": 32
+    },
+    {
+      "name": "Green Pumpkin (2018)",
+      "value": 32,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 60
+    },
+    {
+      "name": "Chroma Cookiecane",
+      "value": 31,
+      "category": "chroma",
+      "mm2values": 30,
+      "supreme": 32
+    },
+    {
+      "name": "Hallowscythe",
+      "value": 31,
+      "category": "ancient",
+      "mm2values": 32,
+      "supreme": 30
+    },
+    {
+      "name": "sweater Knife 2018",
+      "value": 31,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 60
+    },
+    {
+      "name": "Mummy 2017",
+      "value": 30,
+      "category": "uncommon",
+      "mm2values": 35,
+      "supreme": 25
+    },
+    {
+      "name": "Zombified",
+      "value": 30,
+      "category": "rare",
+      "mm2values": 30,
+      "supreme": 30
+    },
+    {
+      "name": "Chroma Heat",
+      "value": 29,
+      "category": "chroma",
+      "mm2values": 30,
+      "supreme": 28
+    },
+    {
+      "name": "JD",
+      "value": 29,
+      "category": "legendary",
+      "mm2values": 30,
+      "supreme": 28
+    },
+    {
+      "name": "Chroma Seer",
+      "value": 27,
+      "category": "chroma",
+      "mm2values": 25,
+      "supreme": 28
+    },
+    {
+      "name": "Elf",
+      "value": 27,
+      "category": "pets",
+      "mm2values": 28,
+      "supreme": 25
+    },
+    {
+      "name": "Pumpkin (2017)",
+      "value": 26,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 50
+    },
+    {
+      "name": "Chroma Tides",
+      "value": 26,
+      "category": "chroma",
+      "mm2values": 25,
+      "supreme": 27
+    },
+    {
+      "name": "Chroma Gingerblade",
+      "value": 26,
+      "category": "chroma",
+      "mm2values": 25,
+      "supreme": 27
+    },
+    {
+      "name": "Green Luger",
+      "value": 24,
+      "category": "godly",
+      "mm2values": 25,
+      "supreme": 23
+    },
+    {
+      "name": "Laser",
+      "value": 23,
+      "category": "godly",
+      "mm2values": 23,
+      "supreme": 22
+    },
+    {
+      "name": "Chroma Saw",
+      "value": 23,
+      "category": "chroma",
+      "mm2values": 22,
+      "supreme": 23
+    },
+    {
+      "name": "Amerilaser",
+      "value": 23,
+      "category": "godly",
+      "mm2values": 23,
+      "supreme": 22
+    },
+    {
+      "name": "Mr. Snowman",
+      "value": 23,
+      "category": "pets",
+      "mm2values": 25,
+      "supreme": 20
+    },
+    {
+      "name": "Chroma Boneblade",
+      "value": 21,
+      "category": "chroma",
+      "mm2values": 20,
+      "supreme": 22
+    },
+    {
+      "name": "Starry Gun",
+      "value": 21,
+      "category": "rare",
+      "mm2values": 20,
+      "supreme": 22
+    },
+    {
+      "name": "Hallowgun",
+      "value": 21,
+      "category": "godly",
+      "mm2values": 22,
+      "supreme": 20
+    },
+    {
+      "name": "Shark",
+      "value": 20,
+      "category": "godly",
+      "mm2values": 20,
+      "supreme": 20
+    },
+    {
+      "name": "Nightblade",
+      "value": 20,
+      "category": "godly",
+      "mm2values": 20,
+      "supreme": 20
+    },
+    {
+      "name": "Watcher Gun",
+      "value": 20,
+      "category": "rare",
+      "mm2values": 20,
+      "supreme": 20
+    },
+    {
+      "name": "Red Pumpkin (2020)",
+      "value": 20,
+      "category": "pets",
+      "mm2values": 125,
+      "supreme": 20
+    },
+    {
+      "name": "Icebeam",
+      "value": 19,
+      "category": "godly",
+      "mm2values": 20,
+      "supreme": 18
+    },
+    {
+      "name": "Logchopper",
+      "value": 19,
+      "category": "ancient",
+      "mm2values": 20,
+      "supreme": 18
+    },
+    {
+      "name": "Plasmabeam",
+      "value": 19,
+      "category": "godly",
+      "mm2values": 20,
+      "supreme": 18
+    },
+    {
+      "name": "Luger",
+      "value": 18,
+      "category": "godly",
+      "mm2values": 17,
+      "supreme": 18
+    },
+    {
+      "name": "Swirly Gun",
+      "value": 18,
+      "category": "godly",
+      "mm2values": 18,
+      "supreme": 18
+    },
+    {
+      "name": "Pixel",
+      "value": 18,
+      "category": "godly",
+      "mm2values": 18,
+      "supreme": 17
+    },
+    {
+      "name": "BattleAxe II",
+      "value": 18,
+      "category": "godly",
+      "mm2values": 18,
+      "supreme": 17
+    },
+    {
+      "name": "Swirl Knife",
+      "value": 18,
+      "category": "rare",
+      "mm2values": 15,
+      "supreme": 20
+    },
+    {
+      "name": "Ginger Luger",
+      "value": 18,
+      "category": "godly",
+      "mm2values": 18,
+      "supreme": 17
+    },
+    {
+      "name": "Iceflake",
+      "value": 17,
+      "category": "godly",
+      "mm2values": 18,
+      "supreme": 15
+    },
+    {
+      "name": "Blaster",
+      "value": 17,
+      "category": "godly",
+      "mm2values": 17,
+      "supreme": 17
+    },
+    {
+      "name": "Sparkle Gun",
+      "value": 17,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 30
+    },
+    {
+      "name": "Red Pumpkin (2021)",
+      "value": 17,
+      "category": "pets",
+      "mm2values": 125,
+      "supreme": 17
+    },
+    {
+      "name": "Wrap Gun",
+      "value": 16,
+      "category": "uncommon",
+      "mm2values": 20,
+      "supreme": 12
+    },
+    {
+      "name": "Skulls 2021",
+      "value": 16,
+      "category": "uncommon",
+      "mm2values": 17,
+      "supreme": 15
+    },
+    {
+      "name": "Old Glory",
+      "value": 16,
+      "category": "godly",
+      "mm2values": 17,
+      "supreme": 15
+    },
+    {
+      "name": "Plasmablade",
+      "value": 16,
+      "category": "godly",
+      "mm2values": 17,
+      "supreme": 15
+    },
+    {
+      "name": "Wrap Knife",
+      "value": 15,
+      "category": "uncommon",
+      "mm2values": 18,
+      "supreme": 12
+    },
+    {
+      "name": "Vampire's Edge",
+      "value": 15,
+      "category": "godly",
+      "mm2values": 15,
+      "supreme": 15
+    },
+    {
+      "name": "Skully (Pet)",
+      "value": 15,
+      "category": "pets",
+      "mm2values": 15,
+      "supreme": 15
+    },
+    {
+      "name": "Slasher",
+      "value": 15,
+      "category": "godly",
+      "mm2values": 15,
+      "supreme": 15
+    },
+    {
+      "name": "Bunnies",
+      "value": 15,
+      "category": "legendary",
+      "mm2values": 15,
+      "supreme": 15
+    },
+    {
+      "name": "Minty",
+      "value": 14,
+      "category": "godly",
+      "mm2values": 15,
+      "supreme": 13
+    },
+    {
+      "name": "Jinglegun",
+      "value": 14,
+      "category": "godly",
+      "mm2values": 15,
+      "supreme": 13
+    },
+    {
+      "name": "Snowflakes",
+      "value": 14,
+      "category": "rare",
+      "mm2values": 15,
+      "supreme": 12
+    },
+    {
+      "name": "Icewing",
+      "value": 14,
+      "category": "ancient",
+      "mm2values": 15,
+      "supreme": 13
+    },
+    {
+      "name": "Silent Night gun",
+      "value": 14,
+      "category": "rare",
+      "mm2values": 15,
+      "supreme": 12
+    },
+    {
+      "name": "Cookiecane",
+      "value": 14,
+      "category": "godly",
+      "mm2values": 14,
+      "supreme": 13
+    },
+    {
+      "name": "Lugercane",
+      "value": 14,
+      "category": "godly",
+      "mm2values": 15,
+      "supreme": 13
+    },
+    {
+      "name": "Virtual",
+      "value": 14,
+      "category": "godly",
+      "mm2values": 15,
+      "supreme": 13
+    },
+    {
+      "name": "Gemstone",
+      "value": 14,
+      "category": "godly",
+      "mm2values": 13,
+      "supreme": 15
+    },
+    {
+      "name": "Gingermint",
+      "value": 13,
+      "category": "godly",
+      "mm2values": 14,
+      "supreme": 12
+    },
+    {
+      "name": "Nebula",
+      "value": 13,
+      "category": "godly",
+      "mm2values": 13,
+      "supreme": 13
+    },
+    {
+      "name": "Swirly Blade",
+      "value": 13,
+      "category": "godly",
+      "mm2values": 13,
+      "supreme": 12
+    },
+    {
+      "name": "Eternalcane",
+      "value": 13,
+      "category": "godly",
+      "mm2values": 13,
+      "supreme": 13
+    },
+    {
+      "name": "BattleAxe",
+      "value": 13,
+      "category": "godly",
+      "mm2values": 13,
+      "supreme": 12
+    },
+    {
+      "name": "Swirly Blade",
+      "value": 13,
+      "category": "godly",
+      "mm2values": 13,
+      "supreme": 12
+    },
+    {
+      "name": "Gingermint",
+      "value": 13,
+      "category": "godly",
+      "mm2values": 14,
+      "supreme": 12
+    },
+    {
+      "name": "Pumpkin 2021",
+      "value": 12,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 12
+    },
+    {
+      "name": "Green Pumpkin (2020)",
+      "value": 12,
+      "category": "pets",
+      "mm2values": 70,
+      "supreme": 12
+    },
+    {
+      "name": "Pumpkin 2018",
+      "value": 12,
+      "category": "pets",
+      "mm2values": 0,
+      "supreme": 12
+    },
+    {
+      "name": "Magma Gun",
+      "value": 12,
+      "category": "rare",
+      "mm2values": 10,
+      "supreme": 13
+    },
+    {
+      "name": "Floral",
+      "value": 12,
+      "category": "uncommon",
+      "mm2values": 12,
+      "supreme": 3
+    },
+    {
+      "name": "Clockwork",
+      "value": 11,
+      "category": "godly",
+      "mm2values": 12,
+      "supreme": 10
+    },
+    {
+      "name": "Fang",
+      "value": 11,
+      "category": "godly",
+      "mm2values": 12,
+      "supreme": 10
+    },
+    {
+      "name": "Tides",
+      "value": 11,
+      "category": "godly",
+      "mm2values": 12,
+      "supreme": 10
+    },
+    {
+      "name": "Heat",
+      "value": 11,
+      "category": "godly",
+      "mm2values": 12,
+      "supreme": 10
+    },
+    {
+      "name": "Spider",
+      "value": 11,
+      "category": "godly",
+      "mm2values": 12,
+      "supreme": 10
+    },
+    {
+      "name": "Chill",
+      "value": 11,
+      "category": "godly",
+      "mm2values": 12,
+      "supreme": 10
+    },
+    {
+      "name": "Floral Knife",
+      "value": 11,
+      "category": "rare",
+      "mm2values": 12,
+      "supreme": 10
+    },
+    {
+      "name": "Arctic Gun",
+      "value": 11,
+      "category": "legendary",
+      "mm2values": 12,
+      "supreme": 10
+    },
+    {
+      "name": "Green Pumpkin (2021)",
+      "value": 10,
+      "category": "pets",
+      "mm2values": 70,
+      "supreme": 10
+    },
+    {
+      "name": "Frostsaber",
+      "value": 10,
+      "category": "godly",
+      "mm2values": 10,
+      "supreme": 10
+    },
+    {
+      "name": "Ghastly Gun",
+      "value": 10,
+      "category": "rare",
+      "mm2values": 12,
+      "supreme": 7
+    },
+    {
+      "name": "Gingerbread Knife 2025",
+      "value": 10,
+      "category": "uncommon",
+      "mm2values": 95,
+      "supreme": 10
+    },
+    {
+      "name": "Cowboy",
+      "value": 10,
+      "category": "rare",
+      "mm2values": 10,
+      "supreme": 10
+    },
+    {
+      "name": "Laser Knife",
+      "value": 10,
+      "category": "rare",
+      "mm2values": 10,
+      "supreme": 0
+    },
+    {
+      "name": "Phaser Knife",
+      "value": 10,
+      "category": "rare",
+      "mm2values": 10,
+      "supreme": 0
+    },
+    {
+      "name": "Ghost Gun",
+      "value": 10,
+      "category": "uncommon",
+      "mm2values": 10,
+      "supreme": 0
+    },
+    {
+      "name": "Ghost",
+      "value": 9,
+      "category": "vintage",
+      "mm2values": 10,
+      "supreme": 8
+    },
+    {
+      "name": "Eternal",
+      "value": 9,
+      "category": "godly",
+      "mm2values": 10,
+      "supreme": 7
+    },
+    {
+      "name": "Eternal III",
+      "value": 9,
+      "category": "godly",
+      "mm2values": 10,
+      "supreme": 7
+    },
+    {
+      "name": "Eternal IV",
+      "value": 9,
+      "category": "godly",
+      "mm2values": 10,
+      "supreme": 7
+    },
+    {
+      "name": "Handsaw",
+      "value": 9,
+      "category": "godly",
+      "mm2values": 9,
+      "supreme": 8
+    },
+    {
+      "name": "Hallow's Edge",
+      "value": 9,
+      "category": "godly",
+      "mm2values": 9,
+      "supreme": 8
+    },
+    {
+      "name": "Bioblade",
+      "value": 9,
+      "category": "godly",
+      "mm2values": 10,
+      "supreme": 8
+    },
+    {
+      "name": "Vintage Laser",
+      "value": 8,
+      "category": "vintage",
+      "mm2values": 8,
+      "supreme": 8
+    },
+    {
+      "name": "Blood",
+      "value": 8,
+      "category": "vintage",
+      "mm2values": 8,
+      "supreme": 8
+    },
+    {
+      "name": "America",
+      "value": 8,
+      "category": "vintage",
+      "mm2values": 8,
+      "supreme": 7
+    },
+    {
+      "name": "Saw",
+      "value": 8,
+      "category": "godly",
+      "mm2values": 8,
+      "supreme": 7
+    },
+    {
+      "name": "Eternal II",
+      "value": 8,
+      "category": "godly",
+      "mm2values": 8,
+      "supreme": 7
+    },
+    {
+      "name": "Xmas",
+      "value": 8,
+      "category": "godly",
+      "mm2values": 10,
+      "supreme": 8
+    },
+    {
+      "name": "Hallow's Blade",
+      "value": 8,
+      "category": "godly",
+      "mm2values": 7,
+      "supreme": 8
+    },
+    {
+      "name": "Ice Shard",
+      "value": 8,
+      "category": "godly",
+      "mm2values": 9,
+      "supreme": 7
+    },
+    {
+      "name": "Boneblade",
+      "value": 8,
+      "category": "godly",
+      "mm2values": 8,
+      "supreme": 7
+    },
+    {
+      "name": "Pumpking",
+      "value": 8,
+      "category": "godly",
+      "mm2values": 8,
+      "supreme": 7
+    },
+    {
+      "name": "Ghostblade",
+      "value": 8,
+      "category": "godly",
+      "mm2values": 8,
+      "supreme": 7
+    },
+    {
+      "name": "Cavern Knife",
+      "value": 8,
+      "category": "legendary",
+      "mm2values": 8,
+      "supreme": 7
+    },
+    {
+      "name": "Snowflake Gun  2023",
+      "value": 8,
+      "category": "rare",
+      "mm2values": 4,
+      "supreme": 12
+    },
+    {
+      "name": "Steel Gun",
+      "value": 8,
+      "category": "uncommon",
+      "mm2values": 7,
+      "supreme": 8
+    },
+    {
+      "name": "Shadow",
+      "value": 8,
+      "category": "legendary",
+      "mm2values": 10,
+      "supreme": 6
+    },
+    {
+      "name": "Pumpkin 2019",
+      "value": 7,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 12
+    },
+    {
+      "name": "Shadow",
+      "value": 7,
+      "category": "vintage",
+      "mm2values": 7,
+      "supreme": 6
+    },
+    {
+      "name": "Blue Pumpkin (2020)",
+      "value": 7,
+      "category": "pets",
+      "mm2values": 210,
+      "supreme": 7
+    },
+    {
+      "name": "Ice Dragon",
+      "value": 7,
+      "category": "godly",
+      "mm2values": 7,
+      "supreme": 7
+    },
+    {
+      "name": "Frostbite",
+      "value": 7,
+      "category": "godly",
+      "mm2values": 7,
+      "supreme": 7
+    },
+    {
+      "name": "Aurora Knife 2019",
+      "value": 7,
+      "category": "rare",
+      "mm2values": 7,
+      "supreme": 7
+    },
+    {
+      "name": "Broken",
+      "value": 7,
+      "category": "legendary",
+      "mm2values": 7,
+      "supreme": 7
+    },
+    {
+      "name": "Vampire Gun",
+      "value": 7,
+      "category": "rare",
+      "mm2values": 10,
+      "supreme": 3
+    },
+    {
+      "name": "Toxic Knife",
+      "value": 7,
+      "category": "rare",
+      "mm2values": 8,
+      "supreme": 5
+    },
+    {
+      "name": "Golden",
+      "value": 7,
+      "category": "legendary",
+      "mm2values": 10,
+      "supreme": 4
+    },
+    {
+      "name": "Prince",
+      "value": 6,
+      "category": "vintage",
+      "mm2values": 6,
+      "supreme": 6
+    },
+    {
+      "name": "Phaser",
+      "value": 6,
+      "category": "vintage",
+      "mm2values": 6,
+      "supreme": 5
+    },
+    {
+      "name": "<3 (Heart)",
+      "value": 6,
+      "category": "pets",
+      "mm2values": 10,
+      "supreme": 1
+    },
+    {
+      "name": "Flames",
+      "value": 6,
+      "category": "godly",
+      "mm2values": 7,
+      "supreme": 5
+    },
+    {
+      "name": "Winter's Edge",
+      "value": 6,
+      "category": "godly",
+      "mm2values": 7,
+      "supreme": 5
+    },
+    {
+      "name": "Prismatic",
+      "value": 6,
+      "category": "godly",
+      "mm2values": 5,
+      "supreme": 7
+    },
+    {
+      "name": "Icedriller",
+      "value": 6,
+      "category": "legendary",
+      "mm2values": 6,
+      "supreme": 5
+    },
+    {
+      "name": "Zombie Gun",
+      "value": 6,
+      "category": "uncommon",
+      "mm2values": 6,
+      "supreme": 5
+    },
+    {
+      "name": "Gingerbread Knife 2020",
+      "value": 6,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 10
+    },
+    {
+      "name": "Gothic Gun",
+      "value": 6,
+      "category": "uncommon",
+      "mm2values": 5,
+      "supreme": 7
+    },
+    {
+      "name": "Golden",
+      "value": 5,
+      "category": "vintage",
+      "mm2values": 5,
+      "supreme": 4
+    },
+    {
+      "name": "Snowflake",
+      "value": 5,
+      "category": "godly",
+      "mm2values": 5,
+      "supreme": 5
+    },
+    {
+      "name": "Eggblade",
+      "value": 5,
+      "category": "godly",
+      "mm2values": 5,
+      "supreme": 5
+    },
+    {
+      "name": "Ghost-knife",
+      "value": 5,
+      "category": "legendary",
+      "mm2values": 5,
+      "supreme": 5
+    },
+    {
+      "name": "Ginger gun",
+      "value": 5,
+      "category": "legendary",
+      "mm2values": 5,
+      "supreme": 5
+    },
+    {
+      "name": "Magma",
+      "value": 5,
+      "category": "rare",
+      "mm2values": 7,
+      "supreme": 3
+    },
+    {
+      "name": "Love gun",
+      "value": 5,
+      "category": "uncommon",
+      "mm2values": 5,
+      "supreme": 2
+    },
+    {
+      "name": "Snowman Gun 2021",
+      "value": 5,
+      "category": "uncommon",
+      "mm2values": 4,
+      "supreme": 5
+    },
+    {
+      "name": "Leaves Gun",
+      "value": 5,
+      "category": "uncommon",
+      "mm2values": 5,
+      "supreme": 2
+    },
+    {
+      "name": "\"Witch’s Brew\r\n\"",
+      "value": 5,
+      "category": "uncommon",
+      "mm2values": 5,
+      "supreme": 2
+    },
+    {
+      "name": "Floatie",
+      "value": 5,
+      "category": "uncommon",
+      "mm2values": 5,
+      "supreme": 3
+    },
+    {
+      "name": "Cowboy",
+      "value": 4,
+      "category": "vintage",
+      "mm2values": 4,
+      "supreme": 4
+    },
+    {
+      "name": "Nobledragon",
+      "value": 4,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 5
+    },
+    {
+      "name": "Deathspeaker",
+      "value": 4,
+      "category": "pets",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Steambird",
+      "value": 4,
+      "category": "pets",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Phoenix",
+      "value": 4,
+      "category": "pets",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Sammy",
+      "value": 4,
+      "category": "pets",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Electro",
+      "value": 4,
+      "category": "pets",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Frostbird",
+      "value": 4,
+      "category": "pets",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Shadow Pumpkin",
+      "value": 4,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 5
+    },
+    {
+      "name": "Purple Pumpkin (2018)",
+      "value": 4,
+      "category": "pets",
+      "mm2values": 5,
+      "supreme": 3
+    },
+    {
+      "name": "Cookieblade",
+      "value": 4,
+      "category": "godly",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Peppermint",
+      "value": 4,
+      "category": "godly",
+      "mm2values": 4,
+      "supreme": 4
+    },
+    {
+      "name": "Overseer Knife",
+      "value": 4,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 4
+    },
+    {
+      "name": "Predator Gun",
+      "value": 4,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 4
+    },
+    {
+      "name": "Scratch",
+      "value": 4,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 6
+    },
+    {
+      "name": "Santa's Magic",
+      "value": 4,
+      "category": "legendary",
+      "mm2values": 5,
+      "supreme": 3
+    },
+    {
+      "name": "Skulls",
+      "value": 4,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Witched",
+      "value": 4,
+      "category": "legendary",
+      "mm2values": 5,
+      "supreme": 3
+    },
+    {
+      "name": "Spectral Gun",
+      "value": 4,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Black",
+      "value": 4,
+      "category": "rare",
+      "mm2values": 4,
+      "supreme": 4
+    },
+    {
+      "name": "Candleflame Gun",
+      "value": 4,
+      "category": "rare",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Green Elite",
+      "value": 4,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Blue Elite",
+      "value": 4,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Santa's Spirit",
+      "value": 4,
+      "category": "legendary",
+      "mm2values": 5,
+      "supreme": 3
+    },
+    {
+      "name": "Wraith Knife",
+      "value": 4,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 5
+    },
+    {
+      "name": "Curse Knife",
+      "value": 4,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 5
+    },
+    {
+      "name": "Frosty",
+      "value": 4,
+      "category": "uncommon",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Mummy Gun 2018",
+      "value": 4,
+      "category": "uncommon",
+      "mm2values": 5,
+      "supreme": 2
+    },
+    {
+      "name": "Potion Knife",
+      "value": 4,
+      "category": "uncommon",
+      "mm2values": 5,
+      "supreme": 2
+    },
+    {
+      "name": "Frozen Gun",
+      "value": 4,
+      "category": "uncommon",
+      "mm2values": 5,
+      "supreme": 3
+    },
+    {
+      "name": "Bones Knife 2024",
+      "value": 4,
+      "category": "uncommon",
+      "mm2values": 4,
+      "supreme": 2
+    },
+    {
+      "name": "Hazard Gun",
+      "value": 4,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 5
+    },
+    {
+      "name": "Mistletoe Knife",
+      "value": 4,
+      "category": "uncommon",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Seer",
+      "value": 3,
+      "category": "godly",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Skeleton Key 2018",
+      "value": 3,
+      "category": "misc",
+      "mm2values": 1,
+      "supreme": 5
+    },
+    {
+      "name": "Box of Red Papers",
+      "value": 3,
+      "category": "misc",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Box of Blue Papers",
+      "value": 3,
+      "category": "misc",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Box of Purple Papers",
+      "value": 3,
+      "category": "misc",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Box of Ultra Wrap",
+      "value": 3,
+      "category": "misc",
+      "mm2values": 4,
+      "supreme": 2
+    },
+    {
+      "name": "Box of Gold Papers",
+      "value": 3,
+      "category": "misc",
+      "mm2values": 4,
+      "supreme": 2
+    },
+    {
+      "name": "Splitter",
+      "value": 3,
+      "category": "vintage",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Chroma Fire Bunny",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Chroma Fire Cat",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Chroma Fire Bat",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Chroma Fire Fox",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Chroma Fire Pig",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Chroma Fire Bear",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Chroma Fire Dog",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Rudolph Pet",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Green Pumpkin (2019)",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Red Pumpkin (2019)",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Traveller",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Ice Phoenix",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Skelly",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Ghosty",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Teddy",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Carrot Bunny",
+      "value": 3,
+      "category": "pets",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Blue Seer",
+      "value": 3,
+      "category": "godly",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Red Seer",
+      "value": 3,
+      "category": "godly",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Purple Seer",
+      "value": 3,
+      "category": "godly",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Shiny",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Rune",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Splash Knife",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Splash Gun",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Elite",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Fusion",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Fade",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Universe",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Overseer Gun",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Predator",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Plasmite",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Viper",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Emerald",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Midnight",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Ripper Knife",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Ripper Gun",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Aurora Knife 2021",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Chromatic Knife",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Frostfade gun",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Nightsky",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 1,
+      "supreme": 5
+    },
+    {
+      "name": "Deep Sea",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Nightfire",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Rainbow Gun",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Space",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Rainbow Knife",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Galaxy",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Krypto",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Spectrum",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Nova",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Vortex",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Korblox",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Squire",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Abstract",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Musical",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Purple",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Imbued",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Galactic",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Irevolver",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Hacker",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Ace",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Bacon",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Damp",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Nether",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Spitfire",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Jack",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Tree Knife 2022",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Tree Gun 2022",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Biogel",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Ghastly Knife",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Neon 2023",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Tree Knife 2023",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Logcutter",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Frostflame Knife",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Butterflies",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Tropical",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Blue Scratch",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Vampire Knife (2022)",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Traveler (Knife)",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Green Marble",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Bats 2016",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Gingerbread (2017)",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Icicles Gun",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Snakebite Knife",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Monster",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Portal Knife",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Watcher Knife",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Magma Knife",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Bluesteel",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Adurite Knife",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Tree Knife 2017",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Wanwood",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Stalker",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Missing",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Cheesy",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Circuit",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Doge",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Paper",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Hazmat",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Melon Knife",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Hive",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Brush",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Jigsaw",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Lucky",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Red",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Blue",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Pink",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Biogun",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Bluesteel gun",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Adurite gun",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Camo gun",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Sketch",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Marina",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Cheddar",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Caution",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Soda",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Wooden",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Snowman Gun 2015",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Potion",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Webs",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Zombie knife",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Lights Gun",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Pumkin",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Gingerbread Gun 2020",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "GingerBread Gun 2021",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Cookie Gun",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Lantern",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Camo Knife",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 4
+    },
+    {
+      "name": "Sweater Knife 2025",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 75,
+      "supreme": 3
+    },
+    {
+      "name": "Snowflake gun 2022",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Gingerbread Gun 2025",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 4,
+      "supreme": 3
+    },
+    {
+      "name": "Stockings Gun 2022",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Wreaths 2024",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Monster Knife 2024",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Jellyfish Knife",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Popsicle Gun",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Canes Knife",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Zombie Knife 2023",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 13,
+      "supreme": 3
+    },
+    {
+      "name": "Steel Knife",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Eclipse",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "painted",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "marble",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "popsicle Knife",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "glowy",
+      "value": 3,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 3
+    },
+    {
+      "name": "Heartbreak",
+      "value": 3,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Pengy",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Seahorsey",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Gifts 2015",
+      "value": 2,
+      "category": "misc",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Mystery Key",
+      "value": 2,
+      "category": "misc",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Box of Fert",
+      "value": 2,
+      "category": "misc",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Box of Green Papers",
+      "value": 2,
+      "category": "misc",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Santa Dog",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Pig",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Fox",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Bear",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Fire Bat",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Fire Bear",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Fire Bunny",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Fire Fox",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Fire Cat",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Fire Dog",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Fire Pig",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Overseer Eye",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Vampire Bat",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Tankie",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Mechbug",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Jetstream",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Eyeball",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Icey",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Chilly",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Fairy",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "UFO",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Snowman Pet",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 2,
+      "supreme": 0
+    },
+    {
+      "name": "Snowbear",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Orange Seer",
+      "value": 2,
+      "category": "godly",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Yellow Seer",
+      "value": 2,
+      "category": "godly",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Red Fire",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Green Fire",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Ghost gun",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Ginger Knife",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Chromatic gun",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Frostfade Knife",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Palms gun",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Nightstar",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Aquarium-knife",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Energized gun",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Molten Knife",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Molten Gun",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Mummy",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Ginger",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "GingerBread 2022",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "GingerBread Gun 2022",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Nuclear",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Snowglobe",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Spring",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Robot",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Waves",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Floral Gun",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Storm",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Pop Art Knife",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Pop Art Gun",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Neon 2025",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Reindeer",
+      "value": 2,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Icecracker Knife",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Aurora Gun 2019",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Arctic (Knife)",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Palms (Knife)",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Aquarium (Gun)",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Ginger Gun 2015",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Cane Gun (2015)",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Orange Marble",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Vampire Knife",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Toxic Gun",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "candy swirl Gun",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Bones 2020",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Ghosts",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Ice Camo",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Wraith Gun",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Snowman 2015",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 4
+    },
+    {
+      "name": "Moons",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Wolf",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Sweater",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Tree Knife 2021",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 2
+    },
+    {
+      "name": "Potion Gun",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Holly Gun",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Holly Knife",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Frozen Knife",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Gingerbread Gun 2019",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Lights",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Mummy Knife 2020",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Portal Gun",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Mummy Gun 2020",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Gothic Knife",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Wraiths Gun",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Fall Camo",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Cookie Knife",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Snowman Knife 2021",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Ghostly",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Melon Gun",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 4
+    },
+    {
+      "name": "Snowman Knife 2024",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 4
+    },
+    {
+      "name": "Wrapped Knife 2024",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Moons Knife  2024",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 3,
+      "supreme": 1
+    },
+    {
+      "name": "Sweater Gun 2025",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Brains Gun 2022",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Pumpkin Knife",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Hazard Knife",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Moonlight",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Witchbrew",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Turtle",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 0,
+      "supreme": 2
+    },
+    {
+      "name": "Carrot Gun 2024",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Carrot Knife 2024",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Stars Knife",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Rose",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Pool Noodle",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "pool-knife",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Neopolitan",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Turtles",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Pier",
+      "value": 2,
+      "category": "rare",
+      "mm2values": 2,
+      "supreme": 3
+    },
+    {
+      "name": "Bubbles",
+      "value": 2,
+      "category": "legendary",
+      "mm2values": 2,
+      "supreme": 2
+    },
+    {
+      "name": "Candies 2017",
+      "value": 1,
+      "category": "misc",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Candies 2016",
+      "value": 1,
+      "category": "misc",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Snowflake Key",
+      "value": 1,
+      "category": "misc",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Dog",
+      "value": 1,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Cat",
+      "value": 1,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Bunny",
+      "value": 1,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Elitey",
+      "value": 1,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Scarecrow",
+      "value": 1,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Blue Pumpkin (2019)",
+      "value": 1,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Badger",
+      "value": 1,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Web",
+      "value": 1,
+      "category": "legendary",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Rupture",
+      "value": 1,
+      "category": "legendary",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Tree gun 2015",
+      "value": 1,
+      "category": "legendary",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Tree Knife 2015",
+      "value": 1,
+      "category": "legendary",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Cursed",
+      "value": 1,
+      "category": "legendary",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Cursed gun",
+      "value": 1,
+      "category": "legendary",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "heart",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Painted Knife",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Darkgun",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Sharky",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Kraken",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Ritual",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Frostflame Gun",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Sleigh",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Sunny",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Cane Gun 2018",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Lil' Alien",
+      "value": 1,
+      "category": "pets",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Cavern Gun",
+      "value": 1,
+      "category": "legendary",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Cupid",
+      "value": 1,
+      "category": "legendary",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Snowy",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Icicles Knife",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "snakebite Gun",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "candy swirl Knife",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Starry Knife",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Bats Gun 2018",
+      "value": 1,
+      "category": "common",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Checker",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Night",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Future",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Donut",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Snowy 2015",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Wrapped Knife 2015",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 4
+    },
+    {
+      "name": "Nutcracker",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Wrapped Gun 2015",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Mummy knife 2018",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Snowflake Gun 2018",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 4,
+      "supreme": 1
+    },
+    {
+      "name": "Sweater Gun 2018",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Wraiths",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 1
+    },
+    {
+      "name": "Soda Knife 2025",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Soda Gun 2025",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Snowman Gun 2023",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Wrapped Gun 2024",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Snowflake Knife 2022",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Gifted",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Stockings Knife 2022",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Mistletoe Gun",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Gingerheart",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Forest",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 0,
+      "supreme": 1
+    },
+    {
+      "name": "Clown Gun 2024",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Fireplace",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 1
+    },
+    {
+      "name": "Stars Gun",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Carrot",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Tourist",
+      "value": 1,
+      "category": "common",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Sand",
+      "value": 1,
+      "category": "common",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Duckies",
+      "value": 1,
+      "category": "common",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Cherries",
+      "value": 1,
+      "category": "common",
+      "mm2values": 1,
+      "supreme": 2
+    },
+    {
+      "name": "Sunset",
+      "value": 1,
+      "category": "rare",
+      "mm2values": 1,
+      "supreme": 3
+    },
+    {
+      "name": "Santa Pet",
+      "value": 0,
+      "category": "pets",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Prince Gun",
+      "value": 0,
+      "category": "rare",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "emberbow",
+      "value": 0,
+      "category": "godly",
+      "mm2values": 0,
+      "supreme": 0
+    },
+    {
+      "name": "Chroma Emberbow",
+      "value": 0,
+      "category": "chroma",
+      "mm2values": 0,
+      "supreme": 0
+    }
   ]
 }
