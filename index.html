@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MM2 Trade Check</title>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#14181f;--panel:#1c222c;--ink:#e9e6df;--mute:#9aa3b0;--tape:#f2c230;--red:#d64541;--ok:#5bbf84;--line:#2c3441}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Inter,system-ui,sans-serif}
+main{max-width:900px;margin:0 auto;padding:16px}
+h1{font:400 2rem/1.1 'Special Elite',Georgia,serif;margin:8px 0 4px}
+.sub{color:var(--mute);font-size:.85rem;margin:0 0 16px}
+.warn{background:var(--tape);color:#14181f;padding:8px 12px;border-radius:4px;font-size:.85rem;margin-bottom:12px}
+.grid{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px}
+.panel h2{font:400 1.2rem 'Special Elite',Georgia,serif;margin:0 0 8px}
+input[type=search]{width:100%;padding:10px;border-radius:4px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.results{max-height:180px;overflow:auto;margin:4px 0 8px}
+.results button{display:flex;justify-content:space-between;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);color:var(--ink);padding:10px 4px;font:inherit;cursor:pointer}
+.results button:hover,.results button:focus-visible{background:var(--bg)}
+.row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--line)}
+.row .n{flex:1}.row .v{color:var(--mute);font-size:.85rem}
+.row input{width:56px;padding:6px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;font:inherit}
+.row button{background:none;border:0;color:var(--red);font-size:1.2rem;cursor:pointer;padding:4px 8px}
+.total{margin-top:8px;font-weight:600;display:flex;justify-content:space-between}
+#verdict{margin-top:12px;padding:16px;border-radius:6px;border:2px dashed var(--line);text-align:center}
+#verdict b{display:block;font:400 1.6rem 'Special Elite',Georgia,serif}
+.win b{color:var(--ok)}.lose b{color:var(--red)}.fair b{color:var(--tape)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--tape)}
+</style></head><body><main>
+<h1>MM2 Trade Check</h1>
+<p class="sub" id="meta">Loading values…</p>
+<div id="warn"></div>
+<div class="grid">
+  <section class="panel" id="give"><h2>You give</h2></section>
+  <section class="panel" id="get"><h2>You get</h2></section>
+</div>
+<div id="verdict">Add items to both sides.</div>
+<p class="sub" id="credit" style="margin-top:16px"></p>
+<script>
+let ITEMS=[];const side={give:[],get:[]};
+const fmt=n=>n.toLocaleString(undefined,{maximumFractionDigits:1});
+async function load(){
+  try{
+    const r=await fetch('values.json?'+Date.now());const d=await r.json();
+    ITEMS=d.items;
+    document.getElementById('credit').textContent=d.credit||'';
+    document.getElementById('meta').textContent='Values from '+d.source+'. Updated '+new Date(d.updated).toLocaleString()+'.';
+    if(d.sample)document.getElementById('warn').innerHTML='<div class="warn">These are sample values. Finish the setup in the README to load live ones.</div>';
+  }catch(e){document.getElementById('meta').textContent='Could not load values.json. Open this page from a web server, not as a file.'}
+  build('give');build('get');
+}
+function build(id){
+  const el=document.getElementById(id);
+  el.insertAdjacentHTML('beforeend','<input type="search" placeholder="Search items" aria-label="Search items for '+id+'"><div class="results"></div><div class="list"></div><div class="total"><span>Total</span><span class="t">0</span></div>');
+  const q=el.querySelector('input'),res=el.querySelector('.results');
+  q.oninput=()=>{
+    const s=q.value.trim().toLowerCase();res.innerHTML='';
+    if(!s)return;
+    ITEMS.filter(i=>i.name.toLowerCase().includes(s)).slice(0,8).forEach(i=>{
+      const b=document.createElement('button');
+      b.innerHTML='<span></span><span>'+fmt(i.value)+'</span>';b.firstChild.textContent=i.name+(i.category?' ('+i.category+')':'');
+      b.onclick=()=>{const f=side[id].find(x=>x.name===i.name);f?f.qty++:side[id].push({name:i.name,value:i.value,qty:1});q.value='';res.innerHTML='';render()};
+      res.appendChild(b);
+    });
+  };
+}
+function render(){
+  let tot={};
+  for(const id of['give','get']){
+    const el=document.getElementById(id),list=el.querySelector('.list');list.innerHTML='';
+    side[id].forEach((it,idx)=>{
+      const live=ITEMS.find(i=>i.name===it.name);if(live)it.value=live.value;
+      const r=document.createElement('div');r.className='row';
+      r.innerHTML='<span class="n"></span><span class="v">'+fmt(it.value)+' ea</span><input type="number" min="1" value="'+it.qty+'" aria-label="Quantity"><button aria-label="Remove">×</button>';
+      r.querySelector('.n').textContent=it.name;
+      r.querySelector('input').onchange=e=>{it.qty=Math.max(1,parseInt(e.target.value)||1);render()};
+      r.querySelector('button').onclick=()=>{side[id].splice(idx,1);render()};
+      list.appendChild(r);
+    });
+    tot[id]=side[id].reduce((s,i)=>s+i.value*i.qty,0);
+    el.querySelector('.t').textContent=fmt(tot[id]);
+  }
+  const v=document.getElementById('verdict');
+  if(!side.give.length||!side.get.length){v.className='';v.textContent='Add items to both sides.';return}
+  const d=tot.get-tot.give,big=Math.max(tot.get,tot.give),pct=big?Math.abs(d)/big*100:0;
+  let cls,t;
+  if(pct<=5){cls='fair';t='Fair trade'}else if(d>0){cls='win';t='You win'}else{cls='lose';t='You lose'}
+  v.className=cls;
+  v.innerHTML='<b>'+t+'</b>'+(cls==='fair'?'Within 5% of even.':'You '+(d>0?'gain ':'lose ')+fmt(Math.abs(d))+' value ('+fmt(pct)+'%).');
+}
+load();
+</script></main></body></html>
