@@ -30,7 +30,7 @@ h1{font-weight:700;font-size:clamp(2rem,8vw,3rem);margin:0;text-align:center;let
 .tabs button[aria-pressed=true]{color:var(--ink);border-color:var(--acc);background:rgba(183,148,255,.14);box-shadow:0 0 18px rgba(183,148,255,.3)}
 .warn{border:1px solid var(--mid);color:var(--mid);border-radius:12px;padding:8px 14px;font-size:.85rem;margin-bottom:14px;text-align:center}
 .grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-@media(max-width:640px){.grid{grid-template-columns:1fr}}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.tabs button{padding:8px 16px}}
 .panel{border:1px solid var(--line);border-radius:16px;padding:14px;background:rgba(0,0,0,.25)}
 .panel h2{font-weight:500;font-size:1rem;margin:0 0 10px;color:var(--acc)}
 input[type=search]{width:100%;padding:11px 16px;border-radius:99px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--ink);font:inherit;transition:box-shadow .2s,border-color .2s}
@@ -71,6 +71,13 @@ input[type=search]:focus{outline:0;border-color:var(--acc);box-shadow:0 0 18px r
 .s-item small{display:block;color:var(--mute)}
 .s-item button{flex:none;padding:6px 14px;border-radius:99px;border:1px solid var(--acc);background:rgba(183,148,255,.12);color:var(--ink);font:inherit;font-size:.78rem;cursor:pointer}
 .s-item button:hover{box-shadow:0 0 14px rgba(183,148,255,.45)}
+.social{display:flex;align-items:center;gap:12px;padding:14px 16px;margin-top:10px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.05);transition:box-shadow .2s,border-color .2s,transform .2s}
+.social:hover{border-color:var(--c);box-shadow:0 0 22px -4px var(--c);transform:translateY(-2px)}
+.social .dot{flex:none;width:10px;height:10px;border-radius:50%;background:var(--c);box-shadow:0 0 10px var(--c)}
+.social .nm{flex:1;min-width:0;font-weight:500}
+.social small{display:block;color:var(--mute);font-weight:400;overflow-wrap:anywhere}
+.social .go,.social .cp{flex:none;padding:6px 16px;border-radius:99px;border:1px solid var(--c);background:rgba(255,255,255,.06);color:var(--ink);font:inherit;font-size:.8rem;text-decoration:none;cursor:pointer}
+.social .go:hover,.social .cp:hover{box-shadow:0 0 14px var(--c)}
 #mute{position:fixed;right:14px;bottom:14px;z-index:5;padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:rgba(20,16,32,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--ink);font:inherit;font-size:.8rem;cursor:pointer;transition:box-shadow .2s}
 #mute[aria-pressed=true]{border-color:var(--acc);box-shadow:0 0 16px rgba(183,148,255,.4)}
 .sub{color:var(--mute);font-size:.78rem;text-align:center;margin:18px 0 0}
@@ -85,7 +92,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--acc)}
 <main id="main"><div class="card" id="card">
   <h1 id="type"></h1>
   <div class="chips"><span class="chip" id="c1">loading…</span><span class="chip" id="c2"></span></div>
-  <div class="tabs"><button id="tab-trade" aria-pressed="true">trade</button><button id="tab-inv" aria-pressed="false">inventory</button></div>
+  <div class="tabs"><button id="tab-trade" aria-pressed="true">trade</button><button id="tab-inv" aria-pressed="false">inventory</button><button id="tab-social" aria-pressed="false">socials</button></div>
   <div id="warn"></div>
   <div id="view-trade">
     <div class="grid">
@@ -99,8 +106,11 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--acc)}
     <section class="panel" id="inv"><h2>your inventory</h2></section>
     <section class="panel" id="insights" style="margin-top:14px"></section>
   </div>
+  <div id="view-social" hidden>
+    <section class="panel"><h2>find me</h2><div id="social-list"></div></section>
+  </div>
   <p class="sub" id="credit"></p>
-  <p class="sub" id="music-credit" style="margin-top:4px">music: "Local Forecast - Elevator" by Kevin MacLeod (incompetech.com), licensed CC BY 4.0</p>
+  <p class="sub" id="music-credit" style="margin-top:4px">music: "Local Forecast - Elevator" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 3.0 (creativecommons.org/licenses/by/3.0)</p>
 </div></main>
 <script>
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -158,22 +168,25 @@ const tag=(text,cls)=>el('span','tag '+cls,text);
 const unstable=s=>/unstable|fall|drop|declin/i.test(s||'');
 const stabClass=s=>unstable(s)?'bad':/^stable/i.test(s)?'ok':'mid';
 const good=i=>!unstable(i.stability)&&(i.demand==null||i.demand>=5);
+/* untradeable items are hidden. the only tradeable unique is Corrupt */
+const tradeable=i=>!/unique/i.test(i.category||'')||/^corrupt\b/i.test((i.name||'').trim());
 const weak=i=>unstable(i.stability)||(i.demand!=null&&i.demand<=3);
 
 /* tabs */
 function showTab(n){
-  document.getElementById('view-trade').hidden=n!=='trade';
-  document.getElementById('view-inv').hidden=n!=='inv';
-  document.getElementById('tab-trade').setAttribute('aria-pressed',n==='trade');
-  document.getElementById('tab-inv').setAttribute('aria-pressed',n==='inv');
+  for(const k of ['trade','inv','social']){
+    document.getElementById('view-'+k).hidden=n!==k;
+    document.getElementById('tab-'+k).setAttribute('aria-pressed',n===k);
+  }
 }
 document.getElementById('tab-trade').onclick=()=>showTab('trade');
 document.getElementById('tab-inv').onclick=()=>showTab('inv');
+document.getElementById('tab-social').onclick=()=>showTab('social');
 
 async function load(){
   try{
     const d=await (await fetch('values.json?'+Date.now())).json();
-    ITEMS=d.items;
+    ITEMS=d.items.filter(tradeable);
     document.getElementById('credit').textContent=d.credit||'';
     document.getElementById('c1').textContent=ITEMS.length+' items';
     document.getElementById('c2').textContent=ago(d.updated);
@@ -357,6 +370,30 @@ function renderInv(){
 }
 
 load();
+
+/* ---------- socials: paste your links between the quotes ---------- */
+const SOCIALS=[
+  {label:'roblox',color:'#ff6b8a',hosts:['roblox.com'],url:'https://www.roblox.com/users/10790703449/profile',handle:'FYPTTL0L'},
+  {label:'discord',color:'#7c8cff',hosts:['discord.gg','discord.com'],url:'',handle:'iloveeeeeegothchicks'}
+];
+function okUrl(u,hosts){try{const x=new URL(u);return x.protocol==='https:'&&hosts.some(h=>x.hostname===h||x.hostname.endsWith('.'+h))}catch(e){return false}}
+function renderSocials(){
+  const box=document.getElementById('social-list');box.innerHTML='';
+  let shown=0;
+  SOCIALS.forEach(s=>{
+    const link=okUrl(s.url,s.hosts)?s.url:'';
+    if(!link&&!s.handle)return;
+    shown++;
+    const r=el('div','social');r.style.setProperty('--c',s.color);
+    const n=el('div','nm',s.label);if(s.handle)n.append(el('small',null,s.handle));
+    r.append(el('i','dot'),n);
+    if(s.handle){const b=el('button','cp','copy');b.onclick=async()=>{try{await navigator.clipboard.writeText(s.handle);b.textContent='copied';setTimeout(()=>b.textContent='copy',1500)}catch(e){}};r.append(b)}
+    if(link){const a=el('a','go','open ↗');a.href=link;a.target='_blank';a.rel='noopener noreferrer';r.append(a)}
+    box.append(r);
+  });
+  if(!shown)box.append(el('p','empty','links coming soon.'));
+}
+try{renderSocials()}catch(e){}
 
 /* ---------- background music: one song on repeat ---------- */
 const bgm=document.getElementById('bgm'),mbtn=document.getElementById('mute');
