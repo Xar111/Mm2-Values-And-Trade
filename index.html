@@ -71,11 +71,6 @@ input[type=search]:focus{outline:0;border-color:var(--acc);box-shadow:0 0 18px r
 .s-item small{display:block;color:var(--mute)}
 .s-item button{flex:none;padding:6px 14px;border-radius:99px;border:1px solid var(--acc);background:rgba(183,148,255,.12);color:var(--ink);font:inherit;font-size:.78rem;cursor:pointer}
 .s-item button:hover{box-shadow:0 0 14px rgba(183,148,255,.45)}
-.radio{margin-top:18px;padding:12px;border:1px solid var(--line);border-radius:16px;background:rgba(0,0,0,.25)}
-.radio h2{font-weight:500;font-size:1rem;margin:0 0 8px;color:var(--acc)}
-.radio select{width:100%;margin-bottom:10px;padding:9px 14px;border-radius:99px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--ink);font:inherit}
-.radio select option{background:#111}
-.radio iframe{display:block;width:100%;max-width:400px;aspect-ratio:16/9;margin:0 auto;border:0;border-radius:12px}
 .sub{color:var(--mute);font-size:.78rem;text-align:center;margin:18px 0 0}
 button:focus-visible,input:focus-visible{outline:2px solid var(--acc)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -100,16 +95,14 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--acc)}
     <section class="panel" id="inv"><h2>your inventory</h2></section>
     <section class="panel" id="insights" style="margin-top:14px"></section>
   </div>
-  <section class="radio"><h2>lofi radio</h2><select id="station" aria-label="Choose a station"><option value="jfKfPfyJRdk">lofi hip hop · relax / study</option><option value="rUxyKA_-grg">lofi hip hop · sleep / chill</option><option value="4xDzrJKXOOY">synthwave · chill / game</option></select><iframe id="radio" title="Lofi radio" allow="autoplay; encrypted-media"></iframe></section>
   <p class="sub" id="credit"></p>
 </div></main>
 <script>
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-/* splash + typewriter + start the radio */
+/* splash + typewriter */
 const TITLE='mm2 trade check';
 document.getElementById('splash').onclick=function(){
-  this.classList.add('gone');radioOn=true;setRadio();
-  document.getElementById('main').classList.add('show');
+  this.classList.add('gone');document.getElementById('main').classList.add('show');
   const el=document.getElementById('type');let i=0;
   reduce?el.textContent=TITLE:(function t(){el.textContent=TITLE.slice(0,++i);if(i<TITLE.length)setTimeout(t,70)})();
 };
@@ -355,13 +348,5 @@ function renderInv(){
     box.append(s3);
   }
 }
-
-/* ---------- lofi radio ---------- */
-const radio=document.getElementById('radio'),station=document.getElementById('station');
-let radioOn=false;
-function setRadio(){radio.src='https://www.youtube-nocookie.com/embed/'+station.value+'?autoplay='+(radioOn?1:0)+'&rel=0&playsinline=1'}
-station.onchange=()=>{radioOn=true;setRadio()};
-setRadio();
-
 load();
 </script></body></html>
