@@ -71,12 +71,16 @@ input[type=search]:focus{outline:0;border-color:var(--acc);box-shadow:0 0 18px r
 .s-item small{display:block;color:var(--mute)}
 .s-item button{flex:none;padding:6px 14px;border-radius:99px;border:1px solid var(--acc);background:rgba(183,148,255,.12);color:var(--ink);font:inherit;font-size:.78rem;cursor:pointer}
 .s-item button:hover{box-shadow:0 0 14px rgba(183,148,255,.45)}
+#mute{position:fixed;right:14px;bottom:14px;z-index:5;padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:rgba(20,16,32,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--ink);font:inherit;font-size:.8rem;cursor:pointer;transition:box-shadow .2s}
+#mute[aria-pressed=true]{border-color:var(--acc);box-shadow:0 0 16px rgba(183,148,255,.4)}
 .sub{color:var(--mute);font-size:.78rem;text-align:center;margin:18px 0 0}
 button:focus-visible,input:focus-visible{outline:2px solid var(--acc)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head><body>
 <canvas id="fx"></canvas>
 <div class="aurora"><i></i><i></i></div>
+<audio id="bgm" src="elevator.mp3" loop preload="auto"></audio>
+<button id="mute" aria-pressed="false">♪ off</button>
 <div id="splash"><span>click to enter</span></div>
 <main id="main"><div class="card" id="card">
   <h1 id="type"></h1>
@@ -96,13 +100,16 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--acc)}
     <section class="panel" id="insights" style="margin-top:14px"></section>
   </div>
   <p class="sub" id="credit"></p>
+  <p class="sub" id="music-credit" style="margin-top:4px">music: "Local Forecast - Elevator" by Kevin MacLeod (incompetech.com), licensed CC BY 4.0</p>
 </div></main>
 <script>
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-/* splash + typewriter */
+/* splash + typewriter. the page opens first, music starts after and can never block it */
 const TITLE='mm2 trade check';
 document.getElementById('splash').onclick=function(){
-  this.classList.add('gone');document.getElementById('main').classList.add('show');
+  this.classList.add('gone');
+  document.getElementById('main').classList.add('show');
+  try{startMusic()}catch(e){}
   const el=document.getElementById('type');let i=0;
   reduce?el.textContent=TITLE:(function t(){el.textContent=TITLE.slice(0,++i);if(i<TITLE.length)setTimeout(t,70)})();
 };
@@ -348,5 +355,20 @@ function renderInv(){
     box.append(s3);
   }
 }
+
 load();
+
+/* ---------- background music: one song on repeat ---------- */
+const bgm=document.getElementById('bgm'),mbtn=document.getElementById('mute');
+function paintMusic(){const on=!bgm.paused;mbtn.textContent=on?'♪ on':'♪ off';mbtn.setAttribute('aria-pressed',on)}
+function wantMusic(){try{return localStorage.getItem('mm2music')!=='off'}catch(e){return true}}
+function startMusic(){if(wantMusic()){bgm.volume=.35;const p=bgm.play();if(p&&p.catch)p.catch(()=>{})}}
+try{
+  bgm.addEventListener('play',paintMusic);bgm.addEventListener('pause',paintMusic);
+  mbtn.onclick=()=>{
+    if(bgm.paused){try{localStorage.setItem('mm2music','on')}catch(e){}bgm.volume=.35;const p=bgm.play();if(p&&p.catch)p.catch(()=>{})}
+    else{try{localStorage.setItem('mm2music','off')}catch(e){}bgm.pause()}
+  };
+  paintMusic();
+}catch(e){}
 </script></body></html>
