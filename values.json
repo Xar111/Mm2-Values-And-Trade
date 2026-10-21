@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T04:42:40.552Z",
+  "updated": "2026-10-21T11:45:17.288Z",
   "source": "RBLXValue (blend of MM2Values and Supreme Values)",
   "credit": "Data from rblxvalue.com",
   "sample": false,
@@ -1386,15 +1386,15 @@
     },
     {
       "name": "Traveler's Axe",
-      "value": 7225,
+      "value": 7275,
       "category": "ancient",
       "mm2values": 7150,
-      "supreme": 7300,
+      "supreme": 7400,
       "stability": "Stable",
       "demand": 6,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/TravellersAxe-resize.webp",
-      "prev": 7175,
-      "changedAt": "2026-10-21T01:03:56.349Z"
+      "prev": 7225,
+      "changedAt": "2026-10-21T11:45:17.288Z"
     },
     {
       "name": "Chroma Sunset",
@@ -1802,7 +1802,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/SunsetKnife-resize.webp",
       "prev": 1,
-      "changedAt": "2026-10-21T04:42:40.552Z"
+      "changedAt": "2026-10-21T11:45:17.288Z"
     },
     {
       "name": "Spirit",
@@ -1827,18 +1827,6 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/pets/uncommon/Elf_2019_improved-resize.webp",
       "prev": null,
       "changedAt": null
-    },
-    {
-      "name": "Embersickle",
-      "value": 500,
-      "category": "godly",
-      "mm2values": 0,
-      "supreme": 500,
-      "stability": "N",
-      "demand": 0,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/noimage.png",
-      "prev": 725,
-      "changedAt": "2026-10-21T01:03:56.349Z"
     },
     {
       "name": "Xenoshot",
@@ -1874,7 +1862,7 @@
       "demand": 5,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/RainbowGun-resize.webp",
       "prev": 3,
-      "changedAt": "2026-10-21T04:42:40.552Z"
+      "changedAt": "2026-10-21T11:45:17.288Z"
     },
     {
       "name": "Flora",
@@ -1913,6 +1901,18 @@
       "changedAt": null
     },
     {
+      "name": "Embersickle",
+      "value": 350,
+      "category": "godly",
+      "mm2values": 0,
+      "supreme": 350,
+      "stability": "N",
+      "demand": 0,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/noimage.png",
+      "prev": 500,
+      "changedAt": "2026-10-21T11:45:17.288Z"
+    },
+    {
       "name": "Heart Wand",
       "value": 345,
       "category": "godly",
@@ -1926,15 +1926,15 @@
     },
     {
       "name": "Corrupt",
-      "value": 303,
+      "value": 298,
       "category": "unique",
       "mm2values": 315,
-      "supreme": 290,
+      "supreme": 280,
       "stability": "Underpaid",
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/Corrupt_Transparent-resize.webp",
-      "prev": 308,
-      "changedAt": "2026-10-21T01:03:56.349Z"
+      "prev": 303,
+      "changedAt": "2026-10-21T11:45:17.288Z"
     },
     {
       "name": "Cane Knife 2015",
@@ -2030,7 +2030,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Waves_knife-resize.webp",
       "prev": 2,
-      "changedAt": "2026-10-21T04:42:40.552Z"
+      "changedAt": "2026-10-21T11:45:17.288Z"
     },
     {
       "name": "Flowerwood gun",
@@ -3854,7 +3854,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/rare/Cowboy-resize.webp",
       "prev": 4,
-      "changedAt": "2026-10-21T04:42:40.552Z"
+      "changedAt": "2026-10-21T11:45:17.288Z"
     },
     {
       "name": "Laser Knife",
@@ -4154,7 +4154,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Shadow-resize.webp",
       "prev": 7,
-      "changedAt": "2026-10-21T04:42:40.552Z"
+      "changedAt": "2026-10-21T11:45:17.288Z"
     },
     {
       "name": "Pumpkin 2019",
@@ -4274,7 +4274,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Golden-resize.webp",
       "prev": 5,
-      "changedAt": "2026-10-21T04:42:40.552Z"
+      "changedAt": "2026-10-21T11:45:17.288Z"
     },
     {
       "name": "Prince",
