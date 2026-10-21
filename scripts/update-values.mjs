@@ -27,14 +27,24 @@ for (let offset = 0; offset < total; offset += 100) {
   });
 }
 
-const clean = items.filter(i => i.name && Number.isFinite(i.value));
 const old = JSON.parse(await readFile('values.json', 'utf8'));
+const oldMap = new Map(old.items.map(i => [i.name, i]));
+const now = new Date().toISOString();
+
+// Remember what each value was before it last changed, so the site can show top movers.
+const clean = items.filter(i => i.name && Number.isFinite(i.value)).map(i => {
+  const o = oldMap.get(i.name);
+  if (!o) return { ...i, prev: null, changedAt: null };
+  if (o.value !== i.value) return { ...i, prev: o.value, changedAt: now };
+  return { ...i, prev: o.prev ?? null, changedAt: o.changedAt ?? null };
+});
+
 if (!old.sample && clean.length < old.items.length * 0.8) throw new Error('Got far fewer items than before; keeping old data.');
 if (clean.length === 0) throw new Error('No items returned.');
 
 if (JSON.stringify(clean) !== JSON.stringify(old.items)) {
   await writeFile('values.json', JSON.stringify({
-    updated: new Date().toISOString(),
+    updated: now,
     source: 'RBLXValue (blend of MM2Values and Supreme Values)',
     credit: credit ?? 'Data from rblxvalue.com',
     sample: false,
