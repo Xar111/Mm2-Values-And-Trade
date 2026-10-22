@@ -117,6 +117,13 @@ body.hascur,body.hascur *{cursor:none!important}
 #cur.idle{opacity:0}
 #mute{position:fixed;right:14px;bottom:14px;z-index:5;padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:rgba(20,16,32,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--ink);font:inherit;font-size:.8rem;cursor:pointer;transition:box-shadow .2s}
 #mute[aria-pressed=true]{border-color:var(--acc);box-shadow:0 0 16px rgba(183,148,255,.4)}
+.note{font-size:.75rem;color:var(--mute);margin:6px 0}
+.msg{font-size:.8rem;margin:8px 0 0;color:var(--mid)}
+.syncrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.syncrow input,.fb select,.fb textarea{flex:1;min-width:0;padding:10px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--ink);font:inherit}
+.fb select{width:100%;flex:none}
+.fb textarea{width:100%;min-height:90px;resize:vertical;margin:8px 0}
+.codebox{font-family:ui-monospace,Menlo,Consolas,monospace;letter-spacing:.08em;padding:10px 14px;border-radius:12px;border:1px dashed var(--acc);background:rgba(183,148,255,.08);text-align:center;margin:8px 0;overflow-wrap:anywhere}
 .sub{color:var(--mute);font-size:.78rem;text-align:center;margin:18px 0 0}
 button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--acc)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -162,9 +169,11 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
       <div class="setrow" style="display:block"><div>cursor<small id="curnote"></small></div><div class="curgrid" id="curgrid"></div></div>
       <div class="setrow"><div>saved data<small>inventory, wishlist, trades and settings on this device</small></div><button class="pill" id="reset">reset</button></div>
     </section>
+    <section class="panel" style="margin-top:14px"><h2>save online (optional)</h2><div id="syncbox"></div></section>
+    <section class="panel fb" style="margin-top:14px"><h2>feedback</h2><div id="fbbox"></div></section>
   </div>
   <p class="sub" id="credit"></p>
-  <p class="sub" id="music-credit" style="margin-top:4px">music: "Gutiar Sample." Made by me and a few friends.</p>
+  <p class="sub" id="music-credit" style="margin-top:4px">music: "Gutiar Sample" made by me and a few friends</p>
 </div></main>
 <script src="config.js"></script>
 <script>
@@ -174,6 +183,12 @@ const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:v}catch(
 const jget=(k,d)=>{try{const v=JSON.parse(LS.get(k,''));return v==null?d:v}catch(e){return d}};
 let FAIR=parseFloat(LS.get('mm2fair','5'));if(![2,5,10,15].includes(FAIR))FAIR=5;
 const FILT={cat:'all',sort:'match'};
+const CFG=window.MM2_CONFIG||{};
+let SYNC=LS.get('mm2sync',''),pushT=null,pulling=false,lastSync=0,showCode=false,CUR_TAB='trade';
+/* anonymous, cookie-free visit counts (GoatCounter). set your code in config.js */
+const GC=(CFG.analytics&&/^[a-z0-9-]+$/i.test(CFG.analytics.goatcounter||'')&&CFG.analytics.goatcounter)||'';
+if(GC){const gs=document.createElement('script');gs.async=true;gs.dataset.goatcounter='https://'+GC+'.goatcounter.com/count';gs.src='https://gc.zgo.at/count.js';document.head.append(gs)}
+function track(n){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:n,title:n,event:true})}catch(e){}}
 
 /* splash + typewriter. the page opens first, music starts after and can never block it */
 const TITLE='mm2 trade check';
@@ -260,7 +275,7 @@ function showTab(n){
     const v=$('view-'+k),on=n===k;v.hidden=!on;$('tab-'+k).setAttribute('aria-pressed',on);
     if(on){v.classList.remove('in');void v.offsetWidth;v.classList.add('in')}
   });
-  glide();
+  CUR_TAB=n;track('tab-'+n);glide();
 }
 TABS.forEach(k=>$('tab-'+k).onclick=()=>showTab(k));
 addEventListener('resize',()=>glide(true));
@@ -386,7 +401,7 @@ function renderFair(x,gv,rv){
     const row=el('div','s-item'),t=el('div','txt');
     t.append(el('div',null,idea.items.map(c=>c.name).join(' + ')),el('small',null,'+'+fmt(idea.v)+(idea.mine?' · from your inventory':'')));
     const b=el('button',null,'add');
-    b.onclick=()=>{idea.items.forEach(c=>{const f=side[key].find(z=>z.name===c.name);f?f.qty++:side[key].push({name:c.name,value:c.value,cat:c.category,qty:1})});render()};
+    b.onclick=()=>{track('fair-add');idea.items.forEach(c=>{const f=side[key].find(z=>z.name===c.name);f?f.qty++:side[key].push({name:c.name,value:c.value,cat:c.category,qty:1})});render()};
     row.append(pic(idea.items[0].image),t,b);fb.append(row);
   });
 }
@@ -395,7 +410,7 @@ function shareLink(){
   return location.origin+location.pathname+'#t='+encodeURIComponent(JSON.stringify({g:p('give'),r:p('get')}));
 }
 $('share').onclick=async function(){
-  const url=shareLink(),btn=this;
+  track('share');const url=shareLink(),btn=this;
   try{
     if(navigator.share){await navigator.share({title:'MM2 trade',url});return}
     await navigator.clipboard.writeText(url);
@@ -413,7 +428,7 @@ function fromHash(){
 }
 /* screenshot card, drawn on a canvas */
 $('shot').onclick=async function(){
-  const btn=this,old=btn.textContent;btn.textContent='making…';
+  track('save-image');const btn=this,old=btn.textContent;btn.textContent='making…';
   try{
     try{if(document.fonts)await document.fonts.load('700 40px Outfit')}catch(e){}
     const F='Outfit,system-ui,sans-serif',Wd=1080;
@@ -459,7 +474,7 @@ $('savet').onclick=function(){
   if(!side.give.length||!side.get.length)return;
   const h=loadHist();
   h.unshift({t:Date.now(),g:side.give.map(i=>[i.name,i.qty]),r:side.get.map(i=>[i.name,i.qty]),gt:sum(side.give),rt:sum(side.get)});
-  LS.set('mm2hist',JSON.stringify(h.slice(0,10)));renderHist();
+  LS.set('mm2hist',JSON.stringify(h.slice(0,10)));queuePush();track('save-trade');renderHist();
   this.textContent='saved';setTimeout(()=>this.textContent='save trade',1500);
 };
 function renderHist(){
@@ -475,13 +490,13 @@ function renderHist(){
       const mk=([n,q])=>{const it=ITEMS.find(i=>i.name===n);return it?{name:n,value:it.value,cat:it.category,qty:q}:null};
       side.give=e.g.map(mk).filter(Boolean);side.get=e.r.map(mk).filter(Boolean);render();
     };
-    del.onclick=()=>{const hh=loadHist();hh.splice(idx,1);LS.set('mm2hist',JSON.stringify(hh));renderHist()};
+    del.onclick=()=>{const hh=loadHist();hh.splice(idx,1);LS.set('mm2hist',JSON.stringify(hh));queuePush();renderHist()};
     row.append(t,load,del);box.append(row);
   });
 }
 
 /* ---------- inventory tab ---------- */
-function saveInv(){LS.set('mm2inv',JSON.stringify(side.inv.map(i=>[i.name,i.qty])))}
+function saveInv(){LS.set('mm2inv',JSON.stringify(side.inv.map(i=>[i.name,i.qty])));queuePush()}
 function loadInv(){
   jget('mm2inv',[]).forEach(([n,q])=>{const it=ITEMS.find(i=>i.name===n);if(it)side.inv.push({name:n,value:it.value,cat:it.category,qty:Math.max(1,parseInt(q)||1)})});
 }
@@ -575,7 +590,7 @@ function renderInv(){
 
 /* ---------- market tab: top movers + wishlist ---------- */
 let WISH=jget('mm2wish',[]);
-function addWish(n){if(!WISH.includes(n)){WISH.push(n);LS.set('mm2wish',JSON.stringify(WISH))}renderMarket()}
+function addWish(n){if(!WISH.includes(n)){WISH.push(n);LS.set('mm2wish',JSON.stringify(WISH));queuePush()}renderMarket()}
 function renderMarket(){
   const mv=$('movers');mv.innerHTML='';
   const ms=ITEMS.map(i=>({i,m:move(i)})).filter(x=>x.m);
@@ -597,7 +612,7 @@ function renderMarket(){
     const m=move(i),sub=fmt(i.value)+(m?'  ·  '+(m.pct>0?'▲ ':'▼ ')+fmt(Math.abs(m.pct))+'%':'')+(i.stability?' · '+i.stability:'');
     const row=sugRow(i,i.name,sub,null);
     const b=el('button',null,'×');b.setAttribute('aria-label','Remove');
-    b.onclick=()=>{WISH=WISH.filter(n=>n!==i.name);LS.set('mm2wish',JSON.stringify(WISH));renderMarket()};
+    b.onclick=()=>{WISH=WISH.filter(n=>n!==i.name);LS.set('mm2wish',JSON.stringify(WISH));queuePush();renderMarket()};
     row.append(b);wl.append(row);
   });
 }
@@ -606,10 +621,10 @@ makeSearch($('wish-search'),i=>addWish(i.name));
 /* ---------- settings ---------- */
 [2,5,10,15].forEach(p=>$('fairsel').add(new Option(p+'%',p)));
 $('fairsel').value=FAIR;
-$('fairsel').onchange=function(){FAIR=parseFloat(this.value);LS.set('mm2fair',String(FAIR));render();renderHist()};
+$('fairsel').onchange=function(){FAIR=parseFloat(this.value);LS.set('mm2fair',String(FAIR));queuePush();render();renderHist()};
 $('reset').onclick=()=>{
-  if(!confirm('Clear your saved inventory, wishlist, trades and settings on this device?'))return;
-  ['mm2inv','mm2wish','mm2hist','mm2fair','mm2cur','mm2music'].forEach(k=>{try{localStorage.removeItem(k)}catch(e){}});
+  if(!confirm('Clear your saved inventory, wishlist, trades and settings on this device? This also unlinks online saving, so keep your sync code if you want your online copy back.'))return;
+  ['mm2inv','mm2wish','mm2hist','mm2fair','mm2cur','mm2music','mm2sync'].forEach(k=>{try{localStorage.removeItem(k)}catch(e){}});
   location.reload();
 };
 /* custom cursors: halloween + cute (mouse devices only) */
@@ -622,7 +637,7 @@ function applyCursor(){
   if(on)curEl.firstElementChild.textContent=curKey;
   document.querySelectorAll('#curgrid button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===curKey));
 }
-CURS.forEach(k=>{const b=el('button',k==='off'?'off':'',k);b.dataset.k=k;b.setAttribute('aria-label','Cursor '+k);b.onclick=()=>{curKey=k;LS.set('mm2cur',k);applyCursor()};$('curgrid').append(b)});
+CURS.forEach(k=>{const b=el('button',k==='off'?'off':'',k);b.dataset.k=k;b.setAttribute('aria-label','Cursor '+k);b.onclick=()=>{curKey=k;LS.set('mm2cur',k);queuePush();applyCursor()};$('curgrid').append(b)});
 $('curnote').textContent=fine?'pick one for your mouse':'cursors only show on computers with a mouse';
 addEventListener('pointermove',e=>{
   if(curEl.hidden)return;
@@ -633,6 +648,113 @@ addEventListener('pointermove',e=>{
 addEventListener('pointerdown',()=>curEl.classList.add('down'));
 addEventListener('pointerup',()=>curEl.classList.remove('down'));
 applyCursor();
+
+/* ---------- online saving (sync code), feedback and error reports ---------- */
+const SB=CFG.supabase||{};
+const cloudOn=!!(SB.url&&SB.key&&/^https:\/\//.test(SB.url));
+async function rpc(name,args){
+  const r=await fetch(SB.url.replace(/\/$/,'')+'/rest/v1/rpc/'+name,{method:'POST',headers:{apikey:SB.key,Authorization:'Bearer '+SB.key,'Content-Type':'application/json'},body:JSON.stringify(args)});
+  if(!r.ok)throw new Error('cloud '+r.status);
+  const t=await r.text();return t?JSON.parse(t):null;
+}
+const normCode=c=>(c||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+const fmtCode=c=>(normCode(c).match(/.{1,4}/g)||[]).join('-');
+async function keyOf(code){
+  const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('mm2:'+normCode(code)));
+  return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
+}
+function newCode(){
+  const A='abcdefghjkmnpqrstuvwxyz23456789',b=new Uint8Array(16);crypto.getRandomValues(b);
+  return fmtCode([...b].map(x=>A[x%A.length]).join(''));
+}
+const snapshot=()=>({inv:side.inv.map(i=>[i.name,i.qty]),wish:WISH,hist:loadHist(),fair:FAIR,cur:curKey});
+function applySnapshot(d){
+  if(!d||typeof d!=='object')return;
+  side.inv=[];
+  (Array.isArray(d.inv)?d.inv:[]).forEach(x=>{if(!Array.isArray(x))return;const it=ITEMS.find(i=>i.name===x[0]);if(it)side.inv.push({name:it.name,value:it.value,cat:it.category,qty:Math.max(1,parseInt(x[1])||1)})});
+  WISH=(Array.isArray(d.wish)?d.wish:[]).filter(x=>typeof x==='string').slice(0,200);
+  const h=(Array.isArray(d.hist)?d.hist:[]).filter(e=>e&&Array.isArray(e.g)&&Array.isArray(e.r)&&isFinite(e.gt)&&isFinite(e.rt)&&isFinite(e.t)).slice(0,10);
+  LS.set('mm2wish',JSON.stringify(WISH));LS.set('mm2hist',JSON.stringify(h));
+  if([2,5,10,15].includes(d.fair)){FAIR=d.fair;LS.set('mm2fair',String(FAIR));$('fairsel').value=FAIR}
+  if(typeof d.cur==='string'&&CURS.includes(d.cur)){curKey=d.cur;LS.set('mm2cur',curKey);applyCursor()}
+  renderInv();render();renderMarket();renderHist();
+}
+function queuePush(){if(!cloudOn||!SYNC||pulling)return;clearTimeout(pushT);pushT=setTimeout(pushNow,1500)}
+async function pushNow(){
+  try{await rpc('sync_put',{k:await keyOf(SYNC),d:snapshot()});lastSync=Date.now()}catch(e){lastSync=-1}
+  paintSync();
+}
+async function pullCloud(){
+  const d=await rpc('sync_get',{k:await keyOf(SYNC)});
+  if(d){pulling=true;try{applySnapshot(d)}finally{pulling=false}}
+  lastSync=Date.now();renderSync();
+}
+function paintSync(){const p=$('syncstat');if(p)p.textContent=lastSync>0?'synced '+timeAgo(lastSync):lastSync<0?"could not sync. it will retry on your next change.":'linked'}
+function renderSync(msg){
+  const b=$('syncbox');b.innerHTML='';
+  if(!cloudOn){b.append(el('p','note','online saving is not set up on this site yet.'));return}
+  b.append(el('p','note','no email or password. your inventory, wishlist, trades and settings are stored online under a random code. keep the code safe. it cannot be recovered if you lose it.'));
+  const fail=()=>renderSync("couldn't reach the server. try again.");
+  if(!SYNC){
+    const mk=el('button','pill','create sync code');
+    mk.onclick=async()=>{mk.disabled=true;try{
+      const code=newCode();await rpc('sync_put',{k:await keyOf(code),d:snapshot()});
+      SYNC=code;LS.set('mm2sync',code);lastSync=Date.now();showCode=true;renderSync('your code is ready. save it somewhere safe.');
+    }catch(e){fail()}};
+    const row=el('div','syncrow'),inp=el('input');inp.placeholder='already have a code?';inp.setAttribute('aria-label','Sync code');inp.autocomplete='off';
+    const use=el('button','pill','use code');
+    use.onclick=async()=>{
+      const code=normCode(inp.value);
+      if(code.length!==16){renderSync('that code should have 16 letters and numbers.');return}
+      try{
+        const d=await rpc('sync_get',{k:await keyOf(code)});
+        if(!d){renderSync('no saved data found for that code.');return}
+        if((side.inv.length||WISH.length||loadHist().length)&&!confirm('Replace the inventory, wishlist and trades on this device with the saved ones?'))return;
+        pulling=true;try{applySnapshot(d)}finally{pulling=false}
+        SYNC=fmtCode(code);LS.set('mm2sync',SYNC);lastSync=Date.now();showCode=false;renderSync('connected. your saved data is loaded.');
+      }catch(e){fail()}
+    };
+    row.append(inp,use);b.append(mk,row);
+  }else{
+    b.append(el('div','codebox',showCode?SYNC:'••••-••••-••••-'+SYNC.slice(-4)));
+    const row=el('div','syncrow');
+    const sh=el('button','pill',showCode?'hide':'show');sh.onclick=()=>{showCode=!showCode;renderSync()};
+    const cp=el('button','pill','copy');cp.onclick=async()=>{try{await navigator.clipboard.writeText(SYNC);cp.textContent='copied';setTimeout(()=>cp.textContent='copy',1500)}catch(e){}};
+    const now=el('button','pill','sync now');now.onclick=async()=>{now.textContent='syncing…';await pushNow();now.textContent='sync now'};
+    const un=el('button','pill','unlink');un.onclick=()=>{if(!confirm('Unlink this device? Your online copy stays saved under your code.'))return;SYNC='';LS.set('mm2sync','');showCode=false;renderSync('unlinked. this device keeps its own copy.')};
+    row.append(sh,cp,now,un);b.append(row,Object.assign(el('p','note'),{id:'syncstat'}));paintSync();
+  }
+  if(msg)b.append(el('p','msg',msg));
+}
+let lastFb=0;
+function ctxString(){return ('tab:'+CUR_TAB+' | '+innerWidth+'x'+innerHeight+' | '+navigator.userAgent).slice(0,400)}
+function renderFeedback(){
+  const b=$('fbbox');b.innerHTML='';
+  if(!cloudOn){b.append(el('p','note','feedback is not set up on this site yet.'));return}
+  const sel=el('select');sel.setAttribute('aria-label','Type');
+  [['bug','something is broken'],['idea','idea'],['other','other']].forEach(([v,t])=>sel.add(new Option(t,v)));
+  const ta=el('textarea');ta.maxLength=500;ta.placeholder='tell me what is wrong or what you want added';ta.setAttribute('aria-label','Message');
+  const send=el('button','pill','send'),out=el('p','msg');
+  send.onclick=async()=>{
+    const m=ta.value.trim();
+    if(m.length<3){out.textContent='write a little more first.';return}
+    if(Date.now()-lastFb<30000){out.textContent='please wait a moment before sending again.';return}
+    try{await rpc('send_feedback',{p_kind:sel.value,p_message:m.slice(0,500),p_context:ctxString()});lastFb=Date.now();ta.value='';out.textContent='sent. thank you!'}
+    catch(e){out.textContent="couldn't send. try again later."}
+  };
+  b.append(sel,ta,send,el('p','note','sends your message plus your browser type, screen size and the tab you were on. no name or contact info.'),out);
+}
+/* anonymous error reports: a short message only, at most 3 per visit */
+let errSent=0;const errSeen=new Set();
+function logErr(m){
+  if(!cloudOn||errSent>=3)return;
+  m=String(m||'').slice(0,300);
+  if(m.length<3||/^Script error|ResizeObserver/i.test(m)||errSeen.has(m))return;
+  errSeen.add(m);errSent++;
+  rpc('send_feedback',{p_kind:'error',p_message:m,p_context:ctxString()}).catch(()=>{});
+}
+addEventListener('error',e=>logErr(e.message+(e.filename?' @'+String(e.filename).split('/').pop()+':'+e.lineno:'')));
+addEventListener('unhandledrejection',e=>logErr('promise: '+((e.reason&&e.reason.message)||e.reason)));
 
 /* ---------- load data ---------- */
 async function load(){
@@ -645,11 +767,13 @@ async function load(){
     if(d.sample)$('warn').innerHTML='<div class="warn">sample values. finish the README setup for live ones</div>';
   }catch(e){$('c1').textContent='could not load values.json'}
   fillCats();loadInv();fromHash();render();renderInv();renderMarket();renderHist();
+  renderSync();renderFeedback();
+  if(SYNC&&cloudOn)pullCloud().catch(()=>{});
 }
 load();
 
 /* ---------- socials: set your links in config.js ---------- */
-const CS=(window.MM2_CONFIG&&window.MM2_CONFIG.socials)||{};
+const CS=CFG.socials||{};
 const SOCIALS=[
   Object.assign({label:'roblox',color:'#ff6b8a',hosts:['roblox.com']},CS.roblox),
   Object.assign({label:'discord',color:'#7c8cff',hosts:['discord.gg','discord.com']},CS.discord)
