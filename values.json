@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T05:43:28.435Z",
+  "updated": "2026-10-30T12:50:40.144Z",
   "source": "RBLXValue (blend of MM2Values and Supreme Values)",
   "credit": "Data from rblxvalue.com",
   "sample": false,
@@ -1386,15 +1386,15 @@
     },
     {
       "name": "Chroma Emberbow",
-      "value": 7500,
+      "value": 7000,
       "category": "chroma",
       "mm2values": 7500,
-      "supreme": 7500,
+      "supreme": 6500,
       "stability": "Fluctuating",
       "demand": 7,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma-Emberbow.webp",
-      "prev": 9000,
-      "changedAt": "2026-10-30T05:43:28.435Z"
+      "prev": 7500,
+      "changedAt": "2026-10-30T12:50:40.144Z"
     },
     {
       "name": "Chroma Blizzard",
@@ -1721,18 +1721,6 @@
       "changedAt": "2026-10-30T05:43:28.435Z"
     },
     {
-      "name": "emberbow",
-      "value": 1250,
-      "category": "ancient",
-      "mm2values": 1300,
-      "supreme": 1200,
-      "stability": "Fluctuating",
-      "demand": 5,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Emberbow-Photoroom.webp",
-      "prev": 1600,
-      "changedAt": "2026-10-30T05:43:28.435Z"
-    },
-    {
       "name": "Blossom",
       "value": 1160,
       "category": "godly",
@@ -1757,16 +1745,28 @@
       "changedAt": "2026-10-26T04:43:07.494Z"
     },
     {
+      "name": "emberbow",
+      "value": 1025,
+      "category": "ancient",
+      "mm2values": 1300,
+      "supreme": 750,
+      "stability": "Fluctuating",
+      "demand": 5,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Emberbow-Photoroom.webp",
+      "prev": 1250,
+      "changedAt": "2026-10-30T12:50:40.144Z"
+    },
+    {
       "name": "Emberscythe",
-      "value": 1125,
+      "value": 938,
       "category": "ancient",
       "mm2values": 1150,
-      "supreme": 1100,
+      "supreme": 725,
       "stability": "Fluctuating",
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/EmberscytheV2.webp",
-      "prev": 1350,
-      "changedAt": "2026-10-30T05:43:28.435Z"
+      "prev": 1125,
+      "changedAt": "2026-10-30T12:50:40.144Z"
     },
     {
       "name": "Sunrise",
@@ -1826,7 +1826,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/SunsetKnife-resize.webp",
       "prev": 1,
-      "changedAt": "2026-10-30T05:43:28.435Z"
+      "changedAt": "2026-10-30T12:50:40.144Z"
     },
     {
       "name": "Soul",
@@ -1898,7 +1898,7 @@
       "demand": 5,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/RainbowGun-resize.webp",
       "prev": 3,
-      "changedAt": "2026-10-30T05:43:28.435Z"
+      "changedAt": "2026-10-30T12:50:40.144Z"
     },
     {
       "name": "Flora",
@@ -2042,7 +2042,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Waves_knife-resize.webp",
       "prev": 2,
-      "changedAt": "2026-10-30T05:43:28.435Z"
+      "changedAt": "2026-10-30T12:50:40.144Z"
     },
     {
       "name": "Flowerwood gun",
@@ -3890,7 +3890,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/rare/Cowboy-resize.webp",
       "prev": 4,
-      "changedAt": "2026-10-30T05:43:28.435Z"
+      "changedAt": "2026-10-30T12:50:40.144Z"
     },
     {
       "name": "Laser Knife",
@@ -4190,7 +4190,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Shadow-resize.webp",
       "prev": 7,
-      "changedAt": "2026-10-30T05:43:28.435Z"
+      "changedAt": "2026-10-30T12:50:40.144Z"
     },
     {
       "name": "Pumpkin 2019",
@@ -4310,7 +4310,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Golden-resize.webp",
       "prev": 5,
-      "changedAt": "2026-10-30T05:43:28.435Z"
+      "changedAt": "2026-10-30T12:50:40.144Z"
     },
     {
       "name": "Prince",
