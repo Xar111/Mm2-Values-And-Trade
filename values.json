@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T23:38:38.008Z",
+  "updated": "2026-11-05T06:41:36.970Z",
   "source": "RBLXValue (blend of MM2Values and Supreme Values)",
   "credit": "Data from rblxvalue.com",
   "sample": false,
@@ -1837,8 +1837,8 @@
       "stability": "Stable",
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/SunsetKnife-resize.webp",
-      "prev": 2,
-      "changedAt": "2026-11-04T23:38:38.008Z"
+      "prev": 1.5,
+      "changedAt": "2026-11-05T06:41:36.970Z"
     },
     {
       "name": "Elf Pet (2019)",
@@ -1922,7 +1922,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/RainbowGun-resize.webp",
       "prev": 3,
-      "changedAt": "2026-11-04T23:38:38.008Z"
+      "changedAt": "2026-11-05T06:41:36.970Z"
     },
     {
       "name": "Flora",
@@ -2066,7 +2066,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Waves_knife-resize.webp",
       "prev": 2,
-      "changedAt": "2026-11-04T23:38:38.008Z"
+      "changedAt": "2026-11-05T06:41:36.970Z"
     },
     {
       "name": "Flowerwood gun",
@@ -4249,8 +4249,8 @@
       "stability": "Stable",
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Golden-resize.webp",
-      "prev": 5,
-      "changedAt": "2026-11-04T23:38:38.008Z"
+      "prev": 4.5,
+      "changedAt": "2026-11-05T06:41:36.970Z"
     },
     {
       "name": "Shadow",
@@ -4261,8 +4261,8 @@
       "stability": "Stable",
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Shadow-resize.webp",
-      "prev": 7,
-      "changedAt": "2026-11-04T23:38:38.008Z"
+      "prev": 6.5,
+      "changedAt": "2026-11-05T06:41:36.970Z"
     },
     {
       "name": "Cowboy",
@@ -4274,7 +4274,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/rare/Cowboy-resize.webp",
       "prev": 4,
-      "changedAt": "2026-11-04T06:13:55.775Z"
+      "changedAt": "2026-11-05T06:41:36.970Z"
     },
     {
       "name": "Laser Knife",
