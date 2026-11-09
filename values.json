@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T06:21:08.260Z",
+  "updated": "2026-11-09T22:18:45.716Z",
   "source": "RBLXValue (blend of MM2Values and Supreme Values)",
   "credit": "Data from rblxvalue.com",
   "sample": false,
@@ -1838,7 +1838,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/SunsetKnife-resize.webp",
       "prev": 1.5,
-      "changedAt": "2026-11-09T06:21:08.260Z"
+      "changedAt": "2026-11-09T22:18:45.716Z"
     },
     {
       "name": "Elf Pet (2019)",
@@ -1922,7 +1922,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/RainbowGun-resize.webp",
       "prev": 3,
-      "changedAt": "2026-11-09T06:21:08.260Z"
+      "changedAt": "2026-11-09T22:18:45.716Z"
     },
     {
       "name": "Xenoshot",
@@ -2066,7 +2066,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Waves_knife-resize.webp",
       "prev": 2,
-      "changedAt": "2026-11-09T06:21:08.260Z"
+      "changedAt": "2026-11-09T22:18:45.716Z"
     },
     {
       "name": "Flowerwood gun",
@@ -4250,7 +4250,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Golden-resize.webp",
       "prev": 4.5,
-      "changedAt": "2026-11-09T06:21:08.260Z"
+      "changedAt": "2026-11-09T22:18:45.716Z"
     },
     {
       "name": "Shadow",
@@ -4262,7 +4262,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Shadow-resize.webp",
       "prev": 6.5,
-      "changedAt": "2026-11-09T06:21:08.260Z"
+      "changedAt": "2026-11-09T22:18:45.716Z"
     },
     {
       "name": "Cowboy",
@@ -4274,7 +4274,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/rare/Cowboy-resize.webp",
       "prev": 4,
-      "changedAt": "2026-11-09T06:21:08.260Z"
+      "changedAt": "2026-11-09T22:18:45.716Z"
     },
     {
       "name": "Laser Knife",
