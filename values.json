@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T18:49:18.028Z",
+  "updated": "2026-11-16T06:22:41.008Z",
   "source": "RBLXValue (blend of MM2Values and Supreme Values)",
   "credit": "Data from rblxvalue.com",
   "sample": false,
@@ -1086,15 +1086,15 @@
     },
     {
       "name": "Chroma Evergun",
-      "value": 47000,
+      "value": 47250,
       "category": "chroma",
-      "mm2values": 47000,
+      "mm2values": 47500,
       "supreme": 47000,
       "stability": "Stable",
-      "demand": 6,
+      "demand": 7,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_Evergun-resize.webp",
-      "prev": 47500,
-      "changedAt": "2026-11-01T05:58:38.999Z"
+      "prev": 47000,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Blue Gingerscope",
@@ -1266,15 +1266,15 @@
     },
     {
       "name": "Chroma Evergreen",
-      "value": 33000,
+      "value": 33250,
       "category": "chroma",
-      "mm2values": 33000,
+      "mm2values": 33500,
       "supreme": 33000,
       "stability": "Stable",
-      "demand": 6,
+      "demand": 7,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_Evergreen-resize.webp",
-      "prev": 33500,
-      "changedAt": "2026-10-30T05:43:28.435Z"
+      "prev": 33000,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Chroma Bauble",
@@ -1314,15 +1314,15 @@
     },
     {
       "name": "Chroma Alienbeam",
-      "value": 18750,
+      "value": 18000,
       "category": "chroma",
-      "mm2values": 19000,
-      "supreme": 18500,
-      "stability": "Underpaid For",
+      "mm2values": 18000,
+      "supreme": 18000,
+      "stability": "Stable",
       "demand": 6,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_Alienbeam-resize.webp",
-      "prev": 19500,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 18750,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Gingerscope",
@@ -1337,18 +1337,6 @@
       "changedAt": "2026-11-07T05:55:23.886Z"
     },
     {
-      "name": "Chroma Emberscythe",
-      "value": 13375,
-      "category": "chroma",
-      "mm2values": 13750,
-      "supreme": 13000,
-      "stability": "Fluctuating",
-      "demand": 7,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_Emberscythe_Knife_2026-resize.webp",
-      "prev": 14250,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
       "name": "Chroma Raygun",
       "value": 12500,
       "category": "chroma",
@@ -1359,6 +1347,18 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_Raygun-resize.webp",
       "prev": 12750,
       "changedAt": "2026-10-26T04:43:07.494Z"
+    },
+    {
+      "name": "Chroma Emberscythe",
+      "value": 12125,
+      "category": "chroma",
+      "mm2values": 12250,
+      "supreme": 12000,
+      "stability": "Fluctuating",
+      "demand": 7,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_Emberscythe_Knife_2026-resize.webp",
+      "prev": 13375,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Chroma Sunsire",
@@ -1386,15 +1386,15 @@
     },
     {
       "name": "Traveler's Axe",
-      "value": 6825,
+      "value": 6725,
       "category": "ancient",
-      "mm2values": 6850,
-      "supreme": 6800,
+      "mm2values": 6750,
+      "supreme": 6700,
       "stability": "Underpaid For",
       "demand": 5,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/TravellersAxe-resize.webp",
-      "prev": 6950,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 6825,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Chroma Emberbow",
@@ -1434,15 +1434,15 @@
     },
     {
       "name": "Travelers Gun",
-      "value": 4800,
+      "value": 4650,
       "category": "godly",
-      "mm2values": 4800,
-      "supreme": 4800,
+      "mm2values": 4600,
+      "supreme": 4700,
       "stability": "Underpaid For",
       "demand": 5,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Traveler%2527s_Gun_2023-resize.webp",
-      "prev": 4925,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 4800,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Chroma Snowstorm",
@@ -1566,15 +1566,15 @@
     },
     {
       "name": "Turkey",
-      "value": 1912.5,
+      "value": 1950,
       "category": "godly",
-      "mm2values": 1900,
-      "supreme": 1925,
+      "mm2values": 1950,
+      "supreme": 1950,
       "stability": "Stable",
       "demand": 5,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Turkey-resize.webp",
-      "prev": 1875,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 1912.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Vampire's Gun",
@@ -1613,6 +1613,18 @@
       "changedAt": "2026-11-10T07:13:39.894Z"
     },
     {
+      "name": "Chroma Embersickle",
+      "value": 1850,
+      "category": "chroma",
+      "mm2values": 1800,
+      "supreme": 1900,
+      "stability": "Fluctuating",
+      "demand": 5,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_Embersickle.webp",
+      "prev": 1750,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
       "name": "Chroma Ornament",
       "value": 1812.5,
       "category": "chroma",
@@ -1635,18 +1647,6 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_Treat-resize.webp",
       "prev": 1788,
       "changedAt": "2026-11-04T23:38:38.008Z"
-    },
-    {
-      "name": "Chroma Embersickle",
-      "value": 1750,
-      "category": "chroma",
-      "mm2values": 1600,
-      "supreme": 1900,
-      "stability": "Fluctuating",
-      "demand": 5,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_Embersickle.webp",
-      "prev": 1775,
-      "changedAt": "2026-11-12T00:39:25.789Z"
     },
     {
       "name": "Chroma Sweet",
@@ -1686,15 +1686,15 @@
     },
     {
       "name": "Chroma Icecream",
-      "value": 1687.5,
+      "value": 1637.5,
       "category": "chroma",
-      "mm2values": 1675,
-      "supreme": 1700,
+      "mm2values": 1625,
+      "supreme": 1650,
       "stability": "Underpaid For",
       "demand": 5,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/chroma-ice-cream-resize.webp",
-      "prev": 1787.5,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 1687.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Darkshot",
@@ -1722,15 +1722,15 @@
     },
     {
       "name": "Vampire's Axe",
-      "value": 1350,
+      "value": 1287.5,
       "category": "ancient",
-      "mm2values": 1350,
-      "supreme": 1350,
-      "stability": "Stable",
+      "mm2values": 1275,
+      "supreme": 1300,
+      "stability": "Underpaid For",
       "demand": 5,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/VampiresAxe-resize.webp",
-      "prev": 1400,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 1350,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Blossom",
@@ -1758,27 +1758,39 @@
     },
     {
       "name": "Chroma Sands",
-      "value": 975,
+      "value": 937.5,
       "category": "chroma",
-      "mm2values": 1000,
-      "supreme": 950,
+      "mm2values": 950,
+      "supreme": 925,
       "stability": "Underpaid For",
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/chroma-sands-resize.webp",
-      "prev": 1062.5,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 975,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Chroma Beachy",
-      "value": 937.5,
+      "value": 887.5,
       "category": "chroma",
-      "mm2values": 975,
-      "supreme": 900,
+      "mm2values": 900,
+      "supreme": 875,
       "stability": "Underpaid For",
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/chroma-beachy-resize.webp",
-      "prev": 1025,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 937.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
+      "name": "Snowcannon",
+      "value": 812.5,
+      "category": "godly",
+      "mm2values": 775,
+      "supreme": 850,
+      "stability": "Doing Well",
+      "demand": 6,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Snowcannon-resize.webp",
+      "prev": 787.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Sunrise",
@@ -1791,18 +1803,6 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/SunsetGun-resize.webp",
       "prev": 788,
       "changedAt": "2026-11-04T23:38:38.008Z"
-    },
-    {
-      "name": "Snowcannon",
-      "value": 787.5,
-      "category": "godly",
-      "mm2values": 775,
-      "supreme": 800,
-      "stability": "Doing Well",
-      "demand": 6,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Snowcannon-resize.webp",
-      "prev": 737.5,
-      "changedAt": "2026-11-14T06:16:28.431Z"
     },
     {
       "name": "Zombie Dog",
@@ -1838,7 +1838,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/SunsetKnife-resize.webp",
       "prev": 1.5,
-      "changedAt": "2026-11-15T18:49:18.028Z"
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Emberbow",
@@ -1878,27 +1878,27 @@
     },
     {
       "name": "Soul",
-      "value": 532.5,
+      "value": 520,
       "category": "godly",
-      "mm2values": 535,
-      "supreme": 530,
-      "stability": "Underpaid For",
-      "demand": 5,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/SoulGun-resize.webp",
-      "prev": 560,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
-      "name": "Spirit",
-      "value": 522.5,
-      "category": "godly",
-      "mm2values": 525,
+      "mm2values": 520,
       "supreme": 520,
       "stability": "Underpaid For",
       "demand": 5,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/SoulGun-resize.webp",
+      "prev": 532.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
+      "name": "Spirit",
+      "value": 510,
+      "category": "godly",
+      "mm2values": 510,
+      "supreme": 510,
+      "stability": "Underpaid For",
+      "demand": 5,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/SpiritKnife-resize.webp",
-      "prev": 550,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 522.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Cane Knife 2018",
@@ -1922,7 +1922,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/RainbowGun-resize.webp",
       "prev": 3,
-      "changedAt": "2026-11-15T18:49:18.028Z"
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Flora",
@@ -1998,15 +1998,15 @@
     },
     {
       "name": "Harvester",
-      "value": 270,
+      "value": 275,
       "category": "ancient",
-      "mm2values": 270,
-      "supreme": 270,
+      "mm2values": 275,
+      "supreme": 275,
       "stability": "Stable",
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/HarvesterUpdated-resize.webp",
-      "prev": 257.5,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 270,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Snowstorm",
@@ -2054,7 +2054,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Waves_knife-resize.webp",
       "prev": 2,
-      "changedAt": "2026-11-15T18:49:18.028Z"
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Flowerwood gun",
@@ -2130,15 +2130,15 @@
     },
     {
       "name": "Icepiercer",
-      "value": 180,
+      "value": 185,
       "category": "ancient",
-      "mm2values": 180,
-      "supreme": 180,
+      "mm2values": 185,
+      "supreme": 185,
       "stability": "Stable",
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/Icepiercer-resize.webp",
-      "prev": 170,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 180,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Snow Dagger",
@@ -2189,6 +2189,18 @@
       "changedAt": "2026-11-10T07:13:39.894Z"
     },
     {
+      "name": "Bat Knife",
+      "value": 140,
+      "category": "godly",
+      "mm2values": 140,
+      "supreme": 140,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/ZombieBat-resize.webp",
+      "prev": 132.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
       "name": "Latte Knife",
       "value": 140,
       "category": "legendary",
@@ -2223,18 +2235,6 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Embersickle.webp",
       "prev": 122.5,
       "changedAt": "2026-11-10T07:13:39.894Z"
-    },
-    {
-      "name": "Bat Knife",
-      "value": 132.5,
-      "category": "godly",
-      "mm2values": 130,
-      "supreme": 135,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/ZombieBat-resize.webp",
-      "prev": 125,
-      "changedAt": "2026-11-14T06:16:28.431Z"
     },
     {
       "name": "Watergun",
@@ -2297,30 +2297,6 @@
       "changedAt": "2026-11-14T06:16:28.431Z"
     },
     {
-      "name": "Mortal",
-      "value": 125,
-      "category": "godly",
-      "mm2values": 125,
-      "supreme": 125,
-      "stability": "Fluctuating",
-      "demand": 3,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Mortal.webp",
-      "prev": 127.5,
-      "changedAt": "2026-11-12T00:39:25.789Z"
-    },
-    {
-      "name": "Immortal",
-      "value": 125,
-      "category": "godly",
-      "mm2values": 125,
-      "supreme": 125,
-      "stability": "Fluctuating",
-      "demand": 3,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Immortal.webp",
-      "prev": 127.5,
-      "changedAt": "2026-11-12T00:39:25.789Z"
-    },
-    {
       "name": "Red Pumpkin (2018)",
       "value": 122.5,
       "category": "pets",
@@ -2345,6 +2321,30 @@
       "changedAt": "2026-11-04T23:38:38.008Z"
     },
     {
+      "name": "Mortal",
+      "value": 120,
+      "category": "godly",
+      "mm2values": 120,
+      "supreme": 120,
+      "stability": "Fluctuating",
+      "demand": 3,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Mortal.webp",
+      "prev": 125,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
+      "name": "Immortal",
+      "value": 120,
+      "category": "godly",
+      "mm2values": 120,
+      "supreme": 120,
+      "stability": "Fluctuating",
+      "demand": 3,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Immortal.webp",
+      "prev": 125,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
       "name": "Dungeon",
       "value": 110,
       "category": "rare",
@@ -2358,15 +2358,15 @@
     },
     {
       "name": "Gifts Knife 2019",
-      "value": 102.5,
+      "value": 97.5,
       "category": "common",
-      "mm2values": 110,
+      "mm2values": 100,
       "supreme": 95,
       "stability": "Stable",
       "demand": 2,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/common/Gifts_Knife_2019-resize.webp",
-      "prev": null,
-      "changedAt": null
+      "prev": 102.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Candy",
@@ -2454,27 +2454,27 @@
     },
     {
       "name": "Beachy",
-      "value": 72.5,
+      "value": 70,
       "category": "godly",
-      "mm2values": 75,
+      "mm2values": 70,
       "supreme": 70,
       "stability": "Stable",
       "demand": 2,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/BeachyGodly2026-resize.webp",
-      "prev": 75,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 72.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Sands",
-      "value": 72.5,
+      "value": 70,
       "category": "godly",
-      "mm2values": 75,
+      "mm2values": 70,
       "supreme": 70,
       "stability": "Stable",
       "demand": 2,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Sands-Updated1-resize.webp",
-      "prev": 75,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 72.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Icebreaker",
@@ -2562,15 +2562,15 @@
     },
     {
       "name": "Piggy",
-      "value": 60,
+      "value": 57.5,
       "category": "pets",
-      "mm2values": 65,
+      "mm2values": 60,
       "supreme": 55,
       "stability": "Stable",
       "demand": 2,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/pets/common/Piggy_improved-resize.webp",
-      "prev": null,
-      "changedAt": null
+      "prev": 60,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Chroma Lightbringer",
@@ -2705,18 +2705,6 @@
       "changedAt": "2026-11-04T23:38:38.008Z"
     },
     {
-      "name": "Batwing",
-      "value": 42.5,
-      "category": "ancient",
-      "mm2values": 45,
-      "supreme": 40,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/BatwingUpdated2-resize.webp",
-      "prev": 43.5,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
       "name": "Vampire Gun (2022)",
       "value": 42.5,
       "category": "legendary",
@@ -2753,28 +2741,16 @@
       "changedAt": null
     },
     {
-      "name": "Elderwood Scythe",
-      "value": 37.5,
+      "name": "Batwing",
+      "value": 40,
       "category": "ancient",
       "mm2values": 40,
-      "supreme": 35,
+      "supreme": 40,
       "stability": "Stable",
       "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/ElderwoodScythev2-resize.webp",
-      "prev": 39,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
-      "name": "Swirly Axe",
-      "value": 37.5,
-      "category": "ancient",
-      "mm2values": 40,
-      "supreme": 35,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/SwirlAxe-resize.webp",
-      "prev": 39,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/BatwingUpdated2-resize.webp",
+      "prev": 42.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Frosted Knife 2019",
@@ -2825,6 +2801,18 @@
       "changedAt": null
     },
     {
+      "name": "Elderwood Scythe",
+      "value": 35,
+      "category": "ancient",
+      "mm2values": 35,
+      "supreme": 35,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/ElderwoodScythev2-resize.webp",
+      "prev": 37.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
       "name": "Chroma Swirly Gun",
       "value": 35,
       "category": "chroma",
@@ -2847,6 +2835,18 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/CottoncandyAccurate-resize.webp",
       "prev": null,
       "changedAt": null
+    },
+    {
+      "name": "Swirly Axe",
+      "value": 35,
+      "category": "ancient",
+      "mm2values": 35,
+      "supreme": 35,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/SwirlAxe-resize.webp",
+      "prev": 37.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Beach",
@@ -2873,30 +2873,6 @@
       "changedAt": null
     },
     {
-      "name": "Phantom",
-      "value": 34.5,
-      "category": "godly",
-      "mm2values": 37,
-      "supreme": 32,
-      "stability": "Stable",
-      "demand": 1,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Phantom-resize.webp",
-      "prev": 36,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
-      "name": "Spectre",
-      "value": 34.5,
-      "category": "godly",
-      "mm2values": 37,
-      "supreme": 32,
-      "stability": "Stable",
-      "demand": 1,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Spectre-resize.webp",
-      "prev": 36,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
       "name": "Chroma DeathShard",
       "value": 34,
       "category": "chroma",
@@ -2906,42 +2882,6 @@
       "demand": 1,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_DeathShard-resize.webp",
       "prev": 35,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
-      "name": "Darkbringer",
-      "value": 33.5,
-      "category": "godly",
-      "mm2values": 35,
-      "supreme": 32,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Darkbringer-resize.webp",
-      "prev": 34,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
-      "name": "Elderwood Revolver",
-      "value": 33.5,
-      "category": "godly",
-      "mm2values": 35,
-      "supreme": 32,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Elderwood_Revolver-resize.webp",
-      "prev": 34,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
-      "name": "Iceblaster",
-      "value": 33.5,
-      "category": "godly",
-      "mm2values": 35,
-      "supreme": 32,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/IcebIaster-resize.webp",
-      "prev": 34,
       "changedAt": "2026-11-14T06:16:28.431Z"
     },
     {
@@ -2981,28 +2921,52 @@
       "changedAt": "2026-11-04T23:38:38.008Z"
     },
     {
-      "name": "Lightbringer",
+      "name": "Darkbringer",
       "value": 32.5,
       "category": "godly",
       "mm2values": 33,
       "supreme": 32,
       "stability": "Stable",
       "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Lightbringer-resize.webp",
-      "prev": 33,
-      "changedAt": "2026-11-04T23:38:38.008Z"
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Darkbringer-resize.webp",
+      "prev": 33.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
-      "name": "Candleflame",
+      "name": "Iceblaster",
       "value": 32.5,
       "category": "godly",
-      "mm2values": 35,
-      "supreme": 30,
+      "mm2values": 33,
+      "supreme": 32,
       "stability": "Stable",
       "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Candleflame1-resize.webp",
-      "prev": 34,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/IcebIaster-resize.webp",
+      "prev": 33.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
+      "name": "Phantom",
+      "value": 32.5,
+      "category": "godly",
+      "mm2values": 33,
+      "supreme": 32,
+      "stability": "Stable",
+      "demand": 1,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Phantom-resize.webp",
+      "prev": 34.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
+      "name": "Spectre",
+      "value": 32.5,
+      "category": "godly",
+      "mm2values": 33,
+      "supreme": 32,
+      "stability": "Stable",
+      "demand": 1,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Spectre-resize.webp",
+      "prev": 34.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Glitch2",
@@ -3017,6 +2981,18 @@
       "changedAt": null
     },
     {
+      "name": "Elderwood Revolver",
+      "value": 32,
+      "category": "godly",
+      "mm2values": 32,
+      "supreme": 32,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Elderwood_Revolver-resize.webp",
+      "prev": 33.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
       "name": "Chroma Slasher",
       "value": 31.5,
       "category": "chroma",
@@ -3026,30 +3002,6 @@
       "demand": 2,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/chroma/Chroma_Slasher-resize.webp",
       "prev": 32.5,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
-      "name": "Sugar",
-      "value": 31.5,
-      "category": "godly",
-      "mm2values": 33,
-      "supreme": 30,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Sugar_v2-resize.webp",
-      "prev": 32.5,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
-      "name": "Makeshift",
-      "value": 31.5,
-      "category": "godly",
-      "mm2values": 33,
-      "supreme": 30,
-      "stability": "Stable",
-      "demand": 1,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Makeshift-resize.webp",
-      "prev": 33,
       "changedAt": "2026-11-14T06:16:28.431Z"
     },
     {
@@ -3065,28 +3017,76 @@
       "changedAt": null
     },
     {
-      "name": "Elderwood Blade",
+      "name": "Lightbringer",
       "value": 31,
       "category": "godly",
-      "mm2values": 32,
+      "mm2values": 30,
+      "supreme": 32,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Lightbringer-resize.webp",
+      "prev": 32.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
+      "name": "Sugar",
+      "value": 30,
+      "category": "godly",
+      "mm2values": 30,
+      "supreme": 30,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Sugar_v2-resize.webp",
+      "prev": 31.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
+      "name": "Candleflame",
+      "value": 30,
+      "category": "godly",
+      "mm2values": 30,
+      "supreme": 30,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Candleflame1-resize.webp",
+      "prev": 32.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
+      "name": "Elderwood Blade",
+      "value": 30,
+      "category": "godly",
+      "mm2values": 30,
       "supreme": 30,
       "stability": "Stable",
       "demand": 1,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/ElderwoodBlade-resize.webp",
-      "prev": 32.5,
-      "changedAt": "2026-11-14T06:16:28.431Z"
+      "prev": 31,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
+      "name": "Makeshift",
+      "value": 30,
+      "category": "godly",
+      "mm2values": 30,
+      "supreme": 30,
+      "stability": "Stable",
+      "demand": 1,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Makeshift-resize.webp",
+      "prev": 31.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Hallowscythe",
-      "value": 31,
+      "value": 30,
       "category": "ancient",
-      "mm2values": 32,
+      "mm2values": 30,
       "supreme": 30,
       "stability": "Stable",
       "demand": 2,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/Hallowscythe-resize.webp",
-      "prev": null,
-      "changedAt": null
+      "prev": 31,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Zombified",
@@ -3341,6 +3341,18 @@
       "changedAt": null
     },
     {
+      "name": "Luger",
+      "value": 21,
+      "category": "godly",
+      "mm2values": 22,
+      "supreme": 20,
+      "stability": "Stable",
+      "demand": 1,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/LugerUpdated-resize.webp",
+      "prev": 18.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
       "name": "Hallowgun",
       "value": 21,
       "category": "godly",
@@ -3385,18 +3397,6 @@
       "stability": "Stable",
       "demand": 2,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/common/Sparkle10_Knife-resize.webp",
-      "prev": null,
-      "changedAt": null
-    },
-    {
-      "name": "RIP Gun",
-      "value": 21,
-      "category": "common",
-      "mm2values": 25,
-      "supreme": 17,
-      "stability": "Stable",
-      "demand": 3,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/common/RIP_Gun_2019-resize.webp",
       "prev": null,
       "changedAt": null
     },
@@ -3509,30 +3509,6 @@
       "changedAt": null
     },
     {
-      "name": "Luger",
-      "value": 18.5,
-      "category": "godly",
-      "mm2values": 17,
-      "supreme": 20,
-      "stability": "Stable",
-      "demand": 1,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/LugerUpdated-resize.webp",
-      "prev": 17.5,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
-      "name": "Logchopper",
-      "value": 18.5,
-      "category": "ancient",
-      "mm2values": 20,
-      "supreme": 17,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/Logchopper-resize.webp",
-      "prev": 19,
-      "changedAt": "2026-11-14T06:16:28.431Z"
-    },
-    {
       "name": "Swirly Gun",
       "value": 18,
       "category": "godly",
@@ -3605,6 +3581,18 @@
       "changedAt": "2026-11-04T23:38:38.008Z"
     },
     {
+      "name": "RIP Gun",
+      "value": 17.5,
+      "category": "common",
+      "mm2values": 18,
+      "supreme": 17,
+      "stability": "Stable",
+      "demand": 3,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/common/RIP_Gun_2019-resize.webp",
+      "prev": 21,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
       "name": "Zombified Gun",
       "value": 17.5,
       "category": "uncommon",
@@ -3627,6 +3615,18 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Blaster-resize.webp",
       "prev": null,
       "changedAt": null
+    },
+    {
+      "name": "Logchopper",
+      "value": 17,
+      "category": "ancient",
+      "mm2values": 17,
+      "supreme": 17,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/Logchopper-resize.webp",
+      "prev": 18.5,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Iceflake",
@@ -3785,18 +3785,6 @@
       "changedAt": null
     },
     {
-      "name": "Virtual",
-      "value": 14,
-      "category": "godly",
-      "mm2values": 15,
-      "supreme": 13,
-      "stability": "Stable",
-      "demand": 1,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Virtual-resize.webp",
-      "prev": null,
-      "changedAt": null
-    },
-    {
       "name": "Minty",
       "value": 14,
       "category": "godly",
@@ -3915,6 +3903,18 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Eternal_Cane-resize.webp",
       "prev": null,
       "changedAt": null
+    },
+    {
+      "name": "Virtual",
+      "value": 13,
+      "category": "godly",
+      "mm2values": 13,
+      "supreme": 13,
+      "stability": "Stable",
+      "demand": 1,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Virtual-resize.webp",
+      "prev": 14,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "BattleAxe",
@@ -4250,7 +4250,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Golden-resize.webp",
       "prev": 4.5,
-      "changedAt": "2026-11-15T18:49:18.028Z"
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Shadow",
@@ -4262,7 +4262,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Shadow-resize.webp",
       "prev": 6.5,
-      "changedAt": "2026-11-15T18:49:18.028Z"
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Cowboy",
@@ -4274,7 +4274,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/rare/Cowboy-resize.webp",
       "prev": 4,
-      "changedAt": "2026-11-15T18:49:18.028Z"
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Laser Knife",
@@ -5261,18 +5261,6 @@
       "changedAt": null
     },
     {
-      "name": "Santa's Magic",
-      "value": 4,
-      "category": "legendary",
-      "mm2values": 5,
-      "supreme": 3,
-      "stability": "Stable",
-      "demand": 1,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/SantasMagic_improved-resize.webp",
-      "prev": null,
-      "changedAt": null
-    },
-    {
       "name": "Witched",
       "value": 4,
       "category": "legendary",
@@ -5317,18 +5305,6 @@
       "stability": "Stable",
       "demand": 2,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/rare/CFGV1-resize.webp",
-      "prev": null,
-      "changedAt": null
-    },
-    {
-      "name": "Santa's Spirit",
-      "value": 4,
-      "category": "legendary",
-      "mm2values": 5,
-      "supreme": 3,
-      "stability": "Stable",
-      "demand": 1,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Santas_spirit2-resize.webp",
       "prev": null,
       "changedAt": null
     },
@@ -5495,7 +5471,7 @@
       "mm2values": 3,
       "supreme": 4,
       "stability": "Stable",
-      "demand": 2,
+      "demand": 1,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/pets/legendary/NobledragonUpdated-resize.webp",
       "prev": 4,
       "changedAt": "2026-11-10T07:13:39.894Z"
@@ -6053,6 +6029,18 @@
       "changedAt": "2026-11-04T14:36:49.592Z"
     },
     {
+      "name": "Santa's Magic",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 3,
+      "stability": "Stable",
+      "demand": 1,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/SantasMagic_improved-resize.webp",
+      "prev": 4,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
       "name": "Skulls",
       "value": 3,
       "category": "legendary",
@@ -6581,6 +6569,18 @@
       "changedAt": null
     },
     {
+      "name": "Santa's Spirit",
+      "value": 3,
+      "category": "legendary",
+      "mm2values": 3,
+      "supreme": 3,
+      "stability": "Stable",
+      "demand": 1,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Santas_spirit2-resize.webp",
+      "prev": 4,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
       "name": "Arctic (Knife)",
       "value": 3,
       "category": "legendary",
@@ -7071,18 +7071,6 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/uncommon/GingerbreadGun2020-resize.webp",
       "prev": null,
       "changedAt": null
-    },
-    {
-      "name": "Wraiths",
-      "value": 3,
-      "category": "uncommon",
-      "mm2values": 3,
-      "supreme": 1,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/uncommon/WraithsKnife-resize.webp",
-      "prev": 1,
-      "changedAt": "2026-11-04T06:13:55.775Z"
     },
     {
       "name": "Cookie Gun",
@@ -8933,18 +8921,6 @@
       "changedAt": "2026-11-04T14:36:49.592Z"
     },
     {
-      "name": "Moons",
-      "value": 2,
-      "category": "uncommon",
-      "mm2values": 3,
-      "supreme": 1,
-      "stability": "Stable",
-      "demand": 1,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/uncommon/Gg-resize.webp",
-      "prev": null,
-      "changedAt": null
-    },
-    {
       "name": "Sweater",
       "value": 2,
       "category": "uncommon",
@@ -9039,6 +9015,18 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/uncommon/Mummygun2020-resize.webp",
       "prev": null,
       "changedAt": null
+    },
+    {
+      "name": "Wraiths",
+      "value": 2,
+      "category": "uncommon",
+      "mm2values": 2,
+      "supreme": 1,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/uncommon/WraithsKnife-resize.webp",
+      "prev": 3,
+      "changedAt": "2026-11-16T06:22:41.008Z"
     },
     {
       "name": "Gothic Knife",
@@ -10937,6 +10925,18 @@
       "changedAt": null
     },
     {
+      "name": "Moons",
+      "value": 1,
+      "category": "uncommon",
+      "mm2values": 1,
+      "supreme": 1,
+      "stability": "Stable",
+      "demand": 1,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/uncommon/Gg-resize.webp",
+      "prev": 2,
+      "changedAt": "2026-11-16T06:22:41.008Z"
+    },
+    {
       "name": "Mummy knife 2018",
       "value": 1,
       "category": "uncommon",
@@ -11315,7 +11315,7 @@
       "mm2values": 1,
       "supreme": 0,
       "stability": null,
-      "demand": 3,
+      "demand": 1,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/uncommon/Abduction_Knife_2025-resize.webp",
       "prev": null,
       "changedAt": null
