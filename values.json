@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T07:01:48.766Z",
+  "updated": "2026-11-21T19:11:50.258Z",
   "source": "RBLXValue (blend of MM2Values and Supreme Values)",
   "credit": "Data from rblxvalue.com",
   "sample": false,
@@ -1829,6 +1829,18 @@
       "changedAt": "2026-11-20T07:10:28.449Z"
     },
     {
+      "name": "Emberscythe",
+      "value": 680,
+      "category": "ancient",
+      "mm2values": 685,
+      "supreme": 675,
+      "stability": "Fluctuating",
+      "demand": 5,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/EmberscytheV2.webp",
+      "prev": 675,
+      "changedAt": "2026-11-21T19:11:50.258Z"
+    },
+    {
       "name": "Emberbow",
       "value": 675,
       "category": "ancient",
@@ -1841,18 +1853,6 @@
       "changedAt": "2026-11-20T07:10:28.449Z"
     },
     {
-      "name": "Emberscythe",
-      "value": 675,
-      "category": "ancient",
-      "mm2values": 685,
-      "supreme": 675,
-      "stability": "Fluctuating",
-      "demand": 5,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/EmberscytheV2.webp",
-      "prev": 680,
-      "changedAt": "2026-11-21T07:01:48.766Z"
-    },
-    {
       "name": "Sunset",
       "value": 650,
       "category": "godly",
@@ -1862,7 +1862,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/SunsetKnife-resize.webp",
       "prev": 1.5,
-      "changedAt": "2026-11-21T07:01:48.766Z"
+      "changedAt": "2026-11-21T19:11:50.258Z"
     },
     {
       "name": "Elf Pet (2019)",
@@ -1922,7 +1922,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/RainbowGun-resize.webp",
       "prev": 3,
-      "changedAt": "2026-11-21T07:01:48.766Z"
+      "changedAt": "2026-11-21T19:11:50.258Z"
     },
     {
       "name": "Flora",
@@ -2066,7 +2066,7 @@
       "demand": 4,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Waves_knife-resize.webp",
       "prev": 2,
-      "changedAt": "2026-11-21T07:01:48.766Z"
+      "changedAt": "2026-11-21T19:11:50.258Z"
     },
     {
       "name": "Flowerwood",
@@ -2453,6 +2453,18 @@
       "changedAt": "2026-11-04T23:38:38.008Z"
     },
     {
+      "name": "Icebreaker",
+      "value": 67.5,
+      "category": "ancient",
+      "mm2values": 70,
+      "supreme": 65,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/Icebreaker-resize.webp",
+      "prev": 65,
+      "changedAt": "2026-11-21T19:11:50.258Z"
+    },
+    {
       "name": "Green Pumpkin (2018)",
       "value": 65,
       "category": "pets",
@@ -2487,18 +2499,6 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/rare/Darkknife_Knife_2023-resize.webp",
       "prev": 67.5,
       "changedAt": "2026-11-10T07:13:39.894Z"
-    },
-    {
-      "name": "Icebreaker",
-      "value": 65,
-      "category": "ancient",
-      "mm2values": 70,
-      "supreme": 65,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/Icebreaker-resize.webp",
-      "prev": 67.5,
-      "changedAt": "2026-11-21T07:01:48.766Z"
     },
     {
       "name": "Beachy",
@@ -3809,6 +3809,18 @@
       "changedAt": null
     },
     {
+      "name": "Icewing",
+      "value": 14,
+      "category": "ancient",
+      "mm2values": 15,
+      "supreme": 13,
+      "stability": "Stable",
+      "demand": 2,
+      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/Icewingknife-resize.webp",
+      "prev": 13,
+      "changedAt": "2026-11-21T19:11:50.258Z"
+    },
+    {
       "name": "Elf Knife 2015",
       "value": 14,
       "category": "common",
@@ -3963,18 +3975,6 @@
       "image": "https://cdn.un6107617.dev/rblxvalue/items/godly/Gingermint-resize.webp",
       "prev": null,
       "changedAt": null
-    },
-    {
-      "name": "Icewing",
-      "value": 13,
-      "category": "ancient",
-      "mm2values": 15,
-      "supreme": 13,
-      "stability": "Stable",
-      "demand": 2,
-      "image": "https://cdn.un6107617.dev/rblxvalue/items/ancient/Icewingknife-resize.webp",
-      "prev": 14,
-      "changedAt": "2026-11-21T07:01:48.766Z"
     },
     {
       "name": "Swirly Blade",
@@ -4250,7 +4250,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Golden-resize.webp",
       "prev": 4.5,
-      "changedAt": "2026-11-21T07:01:48.766Z"
+      "changedAt": "2026-11-21T19:11:50.258Z"
     },
     {
       "name": "Shadow",
@@ -4262,7 +4262,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/legendary/Shadow-resize.webp",
       "prev": 6.5,
-      "changedAt": "2026-11-21T07:01:48.766Z"
+      "changedAt": "2026-11-21T19:11:50.258Z"
     },
     {
       "name": "Cowboy",
@@ -4274,7 +4274,7 @@
       "demand": 3,
       "image": "https://cdn.un6107617.dev/rblxvalue/items/rare/Cowboy-resize.webp",
       "prev": 4,
-      "changedAt": "2026-11-21T07:01:48.766Z"
+      "changedAt": "2026-11-21T19:11:50.258Z"
     },
     {
       "name": "Laser Knife",
